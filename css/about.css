@@ -1,0 +1,125 @@
+.container {
+  padding: 100px 0;
+}
+
+.description .container {
+  padding-top: 100px;
+}
+.description .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.description .container .row .col {
+  background-color: #f6f9fe;
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+}
+.description .container .row .col h1 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.description .container .row .col p {
+  padding-top: 20px;
+}
+.description .container .row .col-description {
+  padding: 0;
+  background-color: transparent;
+  width: 40%;
+}
+.description .container .row .col-description img {
+  width: 401px;
+}
+
+.mission .container {
+  padding-top: 100px;
+}
+.mission .container .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.mission .container .col .row {
+  flex-direction: column;
+  gap: 12px;
+}
+.mission .container .col .row .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.our-team .container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-team .container h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.our-team .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.our-team .container .row .col {
+  align-items: center;
+  gap: 20px;
+  width: 380px;
+}
+.our-team .container .row .profile .profile-pic-and-title {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.our-team .container .row .profile h4 {
+  color: #3461e2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 540px) {
+  .description .container .row {
+    flex-direction: column;
+  }
+  .description .container .row .col {
+    width: 500px;
+  }
+  .description .container .row .col-description img {
+    width: 500px;
+  }
+  .mission .container .col {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .our-team .container {
+    display: grid;
+    flex-wrap: wrap;
+  }
+  .our-team .container .row {
+    display: grid;
+    place-items: center;
+  }
+  .our-team .container .row .col {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .description .container .row {
+    flex-direction: column;
+  }
+  .description .container .row .col {
+    width: 100%;
+  }
+  .description .container .row .col-description img {
+    width: 100%;
+  }
+  .mission .container .col {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=about.css.map */

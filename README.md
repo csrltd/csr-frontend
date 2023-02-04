@@ -1,1 +1,1 @@
-# csr-frontend
+# csr-templates
