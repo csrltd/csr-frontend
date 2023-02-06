@@ -12,7 +12,6 @@ $border-radius: 10px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  z-index: 2;
 }
 html {
   scroll-behavior: smooth;
@@ -925,6 +924,7 @@ footer {
           gap: 30px;
           .row {
               flex-direction: column;
+              flex: 1;
               gap: 12px;
               .icon {
                   width: 30px;
@@ -936,12 +936,57 @@ footer {
 }
 
 .our-team {
+  position: relative;
+  z-index: 0;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.659);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+
+    .popup {
+      background-color: $whitesmoke;
+      width: 800px;
+      border-radius: $border-radius;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+
+      .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 48px;
+        padding-top: 12px;
+        cursor: pointer;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: $border-radius;
+      }
+    }
+  }
+  
   .container {
       padding-top: 50px;
       padding-bottom: 100px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      img {
+        width: 80px; 
+        height: 80px;
+        border-radius: $border-radius;
+      }
 
       h1 {
           text-transform: capitalize;
@@ -958,6 +1003,7 @@ footer {
               align-items: center;
               gap: 20px;
               width: 380px;
+              position: relative;
           }
 
           .profile {
