@@ -346,7 +346,6 @@ footer .copy .container .row .social-media img {
   font-size: 17px;
   text-decoration: underline;
   font-weight: lighter;
-  text-transform: lowercase;
 }
 
 .services-section {
@@ -940,9 +939,6 @@ footer .copy .container .row .social-media img {
   justify-content: center;
 }
 
-.coming-soon {
-  width: 100vw;
-}
 .coming-soon .container {
   max-width: 100vw;
 }
@@ -998,6 +994,7 @@ footer .copy .container .row .social-media img {
 }
 .coming-soon .container .row .col-2 {
   padding: 0 90px;
+  margin: auto;
 }
 .coming-soon .container .row .col-2 h1 {
   color: #3461e2;
