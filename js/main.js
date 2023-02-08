@@ -18,7 +18,7 @@ const TinahBio = document.querySelector('.TinahBio')
 
 //event listeners
 Godwin.addEventListener('click',()=>{
-    GodwinBio.style.visibility = 'visible'
+        GodwinBio.style.visibility = 'visible'
 })
 
 victor.addEventListener('click',()=>{
@@ -46,7 +46,7 @@ const closeButtons = document.querySelectorAll('.close-btn');
 
 closeButtons.forEach((closeButton) => {
   closeButton.addEventListener('click', (event) => {
-    event.target.closest('.overlay').style.display = 'none';
+    event.target.closest('.overlay').style.visibility = 'hidden';
   });
 });
 

@@ -33,7 +33,9 @@ li a {
   text-transform: capitalize;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   padding: 17px 35px;
   border-radius: 10px;
   transition: linear 0.3s;
@@ -373,47 +375,39 @@ footer .copy .container .row .social-media img {
   text-transform: capitalize;
 }
 
-.about {
-  border-radius: 10px;
-  padding: 50px 0;
+.mission {
+  padding-top: 100px;
 }
-.about .container h1 {
-  text-transform: capitalize;
-  font-size: 45px;
-  font-weight: bold;
-}
-.about .container .col {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-.about .container .col .row {
+.mission .container .row {
   display: flex;
   align-items: center;
-  gap: 41px;
+  justify-content: space-between;
+  gap: 150px;
+}
+.mission .container .row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  gap: 12px;
+}
+.mission .container .row .col img {
   border-radius: 10px;
 }
-.about .container .col .row .about-description {
-  width: 50%;
+.mission .container .row-vision-mission {
+  gap: 30px;
+  padding-top: 100px;
 }
-.about .container .col .row .about-img img {
-  width: 500px;
+.mission .container .row-vision-mission .col-vision-mission {
   border-radius: 10px;
+  padding: 50px;
+  background-color: #3461e2;
+  color: #f6f9fe;
 }
-.about .container .col .row h2 {
-  text-transform: capitalize;
-  margin-bottom: 22px;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38px;
-}
-.about .container .col .row p {
-  margin-bottom: 12px;
-}
-.about .container .col .row a {
-  color: #3461e2;
-  text-decoration: underline;
+.mission .container .row-vision-mission .img-frame img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services-details .container h1 {
@@ -751,25 +745,6 @@ footer .copy .container .row .social-media img {
   width: 401px;
 }
 
-.mission .container {
-  padding-top: 100px;
-}
-.mission .container .col {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-}
-.mission .container .col .row {
-  flex-direction: column;
-  flex: 1;
-  gap: 12px;
-}
-.mission .container .col .row .icon {
-  width: 30px;
-  height: 30px;
-}
-
 .our-team {
   position: relative;
   z-index: 0;
@@ -839,6 +814,12 @@ footer .copy .container .row .social-media img {
   gap: 24px;
   align-items: center;
   margin-bottom: 24px;
+}
+.our-team .container .row .profile .profile-pic-and-title img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our-team .container .row .profile h4 {
   color: #3461e2;

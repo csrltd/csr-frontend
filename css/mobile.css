@@ -240,14 +240,26 @@
     flex-direction: column;
   }
   .description .container .row .col {
-    width: 500px;
+    width: 100%;
   }
   .description .container .row .col-description img {
-    width: 500px;
+    width: 100%;
   }
-  .mission .container .col {
-    flex-direction: column;
-    gap: 24px;
+  .mission {
+    padding-top: 0;
+  }
+  .mission .container .row {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .mission .container .row .col {
+    width: 100%;
+  }
+  .our-team .team-bios .overlay {
+    padding: 0 20px;
+  }
+  .our-team .team-bios .overlay .popup {
+    width: 100%;
   }
   .our-team .container {
     display: grid;
@@ -258,7 +270,7 @@
     place-items: center;
   }
   .our-team .container .row .col {
-    width: 280px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 940px) {
@@ -270,9 +282,6 @@
   }
   .description .container .row .col-description img {
     width: 100%;
-  }
-  .mission .container .col {
-    flex-direction: column;
   }
 }
 @media screen and (max-width: 540px) {
