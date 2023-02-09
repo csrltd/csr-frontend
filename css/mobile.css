@@ -217,18 +217,6 @@
     display: none;
   }
 }
-@media screen and (max-width: 620px) {
-  .hero {
-    height: 50vh;
-  }
-  .hero .container {
-    padding-top: 150px;
-  }
-  .hero .container .blog-intro {
-    font-size: 30px;
-    width: 350px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .blogs .container {
     display: flex;
