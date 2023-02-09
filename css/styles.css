@@ -180,6 +180,15 @@ button {
 .header .container .nav-header .nav-toggle {
   display: none;
   color: #f6f9fe;
+  font-size: 30px;
+}
+.header .container .nav-header .nav-fixed {
+  display: none;
+}
+.header .container .nav-header .nav-close-btn {
+  color: #f6f9fe;
+  font-size: 30px;
+  display: none;
 }
 
 footer {
@@ -247,7 +256,7 @@ footer .container .row .footer-blogs .col .blog .featured-img img {
      object-fit: cover;
 }
 footer .container .row .footer-blogs .col .blog .summary p {
-  width: 300px;
+  width: 200px;
 }
 footer .container .row .links {
   display: flex;

@@ -211,6 +211,15 @@ button {
       .nav-toggle {
         display: none;
         color: $whitesmoke;
+        font-size: 30px;
+      }
+      .nav-fixed {
+        display: none;
+      }
+      .nav-close-btn {
+        color: $whitesmoke;
+        font-size: 30px;
+        display: none;
       }
     }
   }
@@ -291,7 +300,7 @@ footer {
 
             .summary {
               p {
-                width: 300px;
+                width: 200px;
               }
             }
           }
