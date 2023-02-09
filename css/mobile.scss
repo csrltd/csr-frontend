@@ -7,13 +7,13 @@ $border-radius: 10px;
 
 //CUSTOM CLASSES
 
-@media screen and(max-width:1250px) {
+@media screen and (max-width:1250px) {
   .container{
     padding: 0 50px;
   }
 }
 
-@media screen and(max-width:540px) {
+@media screen and (max-width:540px) {
   .container{
     padding: 20px;
   }
@@ -31,12 +31,12 @@ $border-radius: 10px;
           .brand {
             gap: 5px;
             .logo {
-              width: 20px;
-              height: 20px;
+              width: 50px;
+              height: 50px;
             }
   
             h1 {
-              font-size: 10px;
+              font-size: 16px;
             }
           }
   
@@ -63,7 +63,7 @@ $border-radius: 10px;
     }
   }
   
-  @media screen and(max-width: 540px) {
+  @media screen and (max-width: 540px) {
     footer {
       .container {
         .row {
@@ -110,7 +110,7 @@ $border-radius: 10px;
   }
 
 //HOME PAGE
-@media screen and(max-width: 540px) {
+@media screen and (max-width: 540px) {
     .hero {
       text-align: center;
       padding-top: 250px;
