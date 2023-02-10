@@ -530,13 +530,14 @@ footer {
       gap: 30px;
 
       .row {
+        flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         background-color: $color-blue-fade;
         border-radius: $border-radius;
         padding: 30px;
         gap: 12px;
-        max-height: 300px;
+        height: 300px;
 
         .title-col {
           display: flex;
