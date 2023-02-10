@@ -4,9 +4,9 @@ $whitesmoke: #f6f9fe;
 $tex-color: #3d3d3d;
 $border-radius: 10px;
 
-//fonts 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap");
 
 * {
   margin: 0;
@@ -37,7 +37,7 @@ a {
 
 li a {
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: capitalize;
 }
 
@@ -53,7 +53,7 @@ textarea {
 .heading {
   font-size: 45px;
   font-weight: bold;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
 }
 
 p {
@@ -118,8 +118,8 @@ button {
 
 .page-intro {
   color: white;
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%,
-      rgba(0, 0, 0, 0) 83.52%), url('/img/csr-images/Picture1.jpg');
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%),
+    url("/img/csr-images/Picture1.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,12 +147,18 @@ button {
 
 //NAVIGATION
 .header {
+  transition: linear 0.2s;
   background-color: transparent;
   height: 100px;
   margin-bottom: -100px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
-
+  //background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   .container {
     .nav-header {
       display: flex;
@@ -362,14 +368,11 @@ footer {
   }
 }
 
-
-
 //HOME PAGE
 
 //Hero section
 .hero {
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%,
-      rgba(0, 0, 0, 0) 83.52%), url('/img/hero-img2.JPG');
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/hero-img2.JPG");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -468,12 +471,10 @@ footer {
   }
 }
 
-
 .mission {
   padding-top: 100px;
   .container {
     .row {
-
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -489,9 +490,7 @@ footer {
         img {
           border-radius: $border-radius;
         }
-
       }
-
     }
 
     .row-vision-mission {
@@ -511,7 +510,6 @@ footer {
         }
       }
     }
-
   }
 }
 
@@ -539,7 +537,6 @@ footer {
         padding: 30px;
         gap: 12px;
         max-height: 300px;
-
 
         .title-col {
           display: flex;
@@ -624,12 +621,10 @@ footer {
   }
 }
 
-
 .avatar {
   width: 80px;
   border-radius: $border-radius;
 }
-
 
 .contacts {
   .container {
@@ -710,7 +705,7 @@ footer {
             }
           }
 
-          input[type=submit] {
+          input[type="submit"] {
             width: 200px;
             font-size: 18px;
             background-color: $color-blue;
@@ -770,7 +765,6 @@ footer {
   }
 }
 
-
 // sliders
 .slider-container {
   width: 100%;
@@ -826,7 +820,6 @@ footer {
             font-weight: lighter;
           }
         }
-
       }
     }
   }
@@ -849,7 +842,6 @@ footer {
     right: -30px;
   }
 }
-
 
 //BLOG PAGE
 
@@ -896,7 +888,6 @@ footer {
 
 //ABOUT PAGE
 
-
 .description {
   .container {
     padding-top: 100px;
@@ -912,8 +903,6 @@ footer {
         padding: 30px;
         border-radius: $border-radius;
         width: 60%;
-
-
 
         h1 {
           font-weight: bolder;
@@ -934,7 +923,6 @@ footer {
           width: 401px;
         }
       }
-
     }
   }
 }
@@ -1013,7 +1001,6 @@ footer {
       }
 
       .profile {
-
         .profile-pic-and-title {
           display: flex;
           gap: 24px;
@@ -1036,11 +1023,10 @@ footer {
   }
 }
 
-
 //SERVICES PAGE
 
 .section-header {
-  background: url('/img/brooke-cagle--uHVRvDr7pg-unsplash.jpg');
+  background: url("/img/brooke-cagle--uHVRvDr7pg-unsplash.jpg");
 }
 
 .service-content {
@@ -1066,7 +1052,6 @@ footer {
     }
   }
 }
-
 
 //SINGLE BLOG
 
@@ -1105,7 +1090,6 @@ footer {
           border-radius: 10px;
         }
       }
-
     }
   }
 }
@@ -1171,7 +1155,6 @@ footer {
   }
 }
 
-
 //UNDER CONSTRUCTION
 
 .container {
@@ -1232,19 +1215,18 @@ footer {
 
       .col-1 {
         height: 100vh;
-        background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.5) 44.53%,
-        rgba(40, 39, 39, 0.5) 83.52%), url('/img/codes.jpg');
+        background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.5) 44.53%, rgba(40, 39, 39, 0.5) 83.52%),
+          url("/img/codes.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         margin: auto;
-        
 
         .title {
           display: flex;
           align-items: center;
           gap: 10px;
           color: $whitesmoke;
-          margin:10rem auto;
+          margin: 10rem auto;
 
           h1 {
             font-weight: 600;

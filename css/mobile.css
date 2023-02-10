@@ -10,10 +10,6 @@
   }
 }
 @media screen and (max-width: 1020px) {
-  .header {
-    background-color: transparent;
-    position: relative;
-  }
   .header .container {
     padding: 0;
     padding-top: 20px;
