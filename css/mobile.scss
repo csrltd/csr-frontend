@@ -243,6 +243,10 @@ $border-radius: 10px;
       .container {
         .col {
           flex-direction: column;
+
+          .row {
+            height: 240px;
+          }
         }
       }
     }
