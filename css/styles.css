@@ -556,8 +556,9 @@ footer .copy .container .row .social-media img {
   padding: 20px;
 }
 .contacts .container .col .row .col-1 .row-1 .office .office-title .icon {
-  width: 26.25px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  color: #3461e2;
 }
 .contacts .container .col .row .col-1 .row-1 .office .office-title h3 {
   text-transform: capitalize;
