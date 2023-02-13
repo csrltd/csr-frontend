@@ -1,8 +1,8 @@
-$color-blue: #3461e2;
+$color-blue: #4565af;
 $color-blue-fade: #e5eafb;
 $whitesmoke: #f6f9fe;
 $tex-color: #3d3d3d;
-$border-radius: 10px;
+$border-radius: 2px;
 
 //fonts
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:wght@300&display=swap");
@@ -45,7 +45,7 @@ button,
 input,
 textarea {
   padding: 17px 35px;
-  border-radius: 10px;
+  border-radius: $border-radius;
   transition: linear 0.3s;
 }
 
@@ -158,6 +158,7 @@ button {
   z-index: 10;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+
   .container {
     .nav-header {
       display: flex;
@@ -178,9 +179,12 @@ button {
         }
 
         .logo {
-          width: 60px;
-          height: 60px;
+          width: 150px;
           pointer-events: none;
+        }
+
+        .blue-logo {
+          display: none;
         }
       }
 
@@ -200,7 +204,7 @@ button {
             gap: 10px;
             background-color: $color-blue;
             padding: 10px 25px;
-            border-radius: 10px;
+            border-radius: $border-radius;
           }
 
           button {
@@ -218,12 +222,15 @@ button {
         color: $whitesmoke;
         font-size: 30px;
       }
+
       .nav-fixed {
         display: none;
       }
+
       .nav-close-btn {
         color: $whitesmoke;
         font-size: 30px;
+        color: $color-blue;
         display: none;
       }
     }
@@ -437,7 +444,7 @@ footer {
 }
 
 .services-section {
-  margin-top: -40px;
+  margin-top: -15px;
 
   .container {
     .row {
@@ -470,8 +477,70 @@ footer {
   }
 }
 
+//About Section
+
+.about {
+  border-radius: $border-radius;
+  padding: 50px 0;
+
+  .container {
+    h1 {
+      text-transform: capitalize;
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .col {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .row {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        gap: 41px;
+
+        border-radius: 10px;
+
+
+        .about-description {
+          width: 50%;
+        }
+
+        .about-img {
+          img {
+            width: 500px;
+            border-radius: $border-radius;
+          }
+        }
+
+        h2 {
+          text-transform: capitalize;
+          margin-bottom: 22px;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 38px;
+        }
+
+        p {
+          margin-bottom: 12px;
+        }
+
+        a {
+          color: $color-blue;
+          text-decoration: underline;
+        }
+
+      }
+    }
+  }
+}
+
 .mission {
   padding-top: 100px;
+
   .container {
     .row {
       display: flex;
@@ -495,6 +564,7 @@ footer {
     .row-vision-mission {
       gap: 30px;
       padding-top: 100px;
+
       .col-vision-mission {
         border-radius: $border-radius;
         padding: 50px;
@@ -570,7 +640,7 @@ footer {
       justify-content: center;
       gap: 24px;
       background-color: $color-blue;
-      border-radius: 10px;
+      border-radius: $border-radius;
       color: white;
       padding: 50px;
 
@@ -627,6 +697,8 @@ footer {
 }
 
 .contacts {
+  padding-top: 100px;
+
   .container {
     .contacts-heading {
       padding-bottom: 24px;
@@ -637,8 +709,9 @@ footer {
     }
 
     .col {
+      margin-top: 50px;
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
       gap: 100px;
 
@@ -656,23 +729,24 @@ footer {
           .row-1 {
             background-color: $whitesmoke;
             width: 300px;
-            height: 250px;
             display: flex;
             flex-direction: column;
             gap: 30px;
-            padding: 20px;
+            padding: 30px;
             border-radius: $border-radius;
 
             .office {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+
               .office-title {
                 display: flex;
                 align-items: center;
                 gap: 20px;
-                padding: 20px;
 
                 .icon {
-                  width: 40px;
-                  height: 40px;
+                  font-size: 28px;
                   color: $color-blue;
                 }
 
@@ -757,7 +831,7 @@ footer {
         margin-top: 5px;
 
         iframe {
-          width: 800px;
+          max-width: 900px;
           height: 400px;
           border-radius: 0 $border-radius $border-radius 0;
         }
@@ -784,7 +858,7 @@ footer {
       position: relative;
       width: 20vw;
       height: 320px;
-      border-radius: 10px;
+      border-radius: $border-radius;
       background-color: $color-blue-fade;
 
       .customer-testimonial {
@@ -793,7 +867,7 @@ footer {
 
       .customer-profile {
         background-color: $color-blue;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 $border-radius $border-radius;
         color: white;
         margin-top: 50;
         position: absolute;
@@ -846,10 +920,6 @@ footer {
 
 //BLOG PAGE
 
-.heading {
-  font-family: "Nunito Sans", sans-serif;
-}
-
 .blogs {
   padding: 80px;
 
@@ -868,7 +938,7 @@ footer {
         gap: 15px;
 
         img {
-          border-radius: 10px;
+          border-radius: $border-radius;
         }
 
         .blog-summary {
@@ -1048,7 +1118,7 @@ footer {
       gap: 30px;
 
       img {
-        border-radius: 20px;
+        border-radius: $border-radius;
       }
     }
   }
@@ -1088,7 +1158,7 @@ footer {
 
       .featured-image {
         img {
-          border-radius: 10px;
+          border-radius: $border-radius;
         }
       }
     }
@@ -1112,14 +1182,14 @@ footer {
         width: 70%;
         background-color: $whitesmoke;
         padding: 20px;
-        border-radius: 20px;
+        border-radius: $border-radius;
       }
 
       .side-bar {
         width: 30%;
         background-color: $whitesmoke;
         padding: 20px;
-        border-radius: 20px;
+        border-radius: $border-radius;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -1137,7 +1207,7 @@ footer {
               align-items: center;
               padding: 20px;
               background-color: white;
-              border-radius: 20px;
+              border-radius: $border-radius;
               gap: 15px;
 
               img {
@@ -1173,76 +1243,62 @@ footer {
 
 // COMING SOON
 .coming-soon {
+  height: 100vh;
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.5) 44.53%, rgba(40, 39, 39, 0.5) 83.52%),
+    url("/img/codes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+
   .container {
-    max-width: 100vw;
-    .logo {
-      width: 40px;
-      height: 40px;
-    }
-
-    .icon {
-      width: 24px;
-      height: 24px;
-    }
-
+    max-width: 100%;
     .row {
+      
       .col {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        width: 50%;
+      }
+      .col-1 {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+       .logo {
+        max-width: 250px;
+       }
+      }
 
-        .contacts {
+      .col-2 {
+        height: 100vh;
+        background-color: white;
+        display: grid;
+        place-content: center;
+        gap: 24px;
+        padding: 0 90px;
+        margin: auto;
+
+        .logo {
+          display: none;
+        }
+
+        h1 {
+          color: $color-blue;
+          text-transform: capitalize;
+        }
+
+        .coming-soon-contacts {
           display: flex;
-          align-items: center;
           gap: 24px;
-
-          .col-contacts {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-          }
         }
 
         .social-media {
           display: flex;
-          align-items: center;
           gap: 12px;
 
           a {
-            color: $color-blue;
+            i {
+              color: $color-blue;
+            }
           }
-        }
-      }
-
-      .col-1 {
-        height: 100vh;
-        background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.5) 44.53%, rgba(40, 39, 39, 0.5) 83.52%),
-          url("/img/codes.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: auto;
-
-        .title {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          color: $whitesmoke;
-          margin: 10rem auto;
-
-          h1 {
-            font-weight: 600;
-            font-size: 20px;
-            text-transform: capitalize;
-          }
-        }
-      }
-
-      .col-2 {
-        padding: 0 90px;
-        margin: auto;
-        h1 {
-          color: $color-blue;
-          text-transform: capitalize;
         }
       }
     }
