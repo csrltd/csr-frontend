@@ -48,6 +48,7 @@ const navLinks = document.querySelectorAll('.link')
 const navLink = document.querySelectorAll('.nav-link')
 const logoBlue = document.querySelector('.blue-logo')
 const logoWhite = document.querySelector('.white-logo')
+const btnHeader = document.querySelector('.btn-header')
 
 window.addEventListener('scroll', () => {
   let scrolledPixels = window.scrollY
@@ -57,9 +58,16 @@ window.addEventListener('scroll', () => {
     headerBg.style.boxShadow = "10px 20px 50px rgba(0, 0, 0, 0.070)";
     logoBlue.style.display = 'block'
     logoWhite.style.display = 'none'
-    navToggle.style.color = '#4565af'
+    navToggle.style.color = '#2A2D7C'
     navLink.forEach((link) => {
-      link.style.color = '#4565af'
+      link.style.color = '#2A2D7C'
+    })
+    btnHeader.classList.add('btn-blue-outline')
+
+    closeBtn.addEventListener('click', () => {
+      headerBg.style.background = 'white'
+      logoBlue.style.display = 'block'
+      logoWhite.style.display = 'none'
     })
   } else {
     headerBg.style.background = 'transparent'
@@ -70,6 +78,14 @@ window.addEventListener('scroll', () => {
     navLink.forEach((link) => {
       link.style.color = 'white'
     })
+
+    closeBtn.addEventListener('click', () => {
+      headerBg.style.background = 'transparent'
+      logoBlue.style.display = 'none'
+      logoWhite.style.display = 'block'
+    })
+
+    btnHeader.classList.remove('btn-blue-outline')
   }
 })
 
@@ -95,7 +111,7 @@ navToggle.addEventListener('click', () => {
   logoBlue.style.display = 'block'
   logoWhite.style.display = 'none'
   navLink.forEach((link) => {
-    link.style.color = '#4565af'
+    link.style.color = '#2A2D7C'
   })
 })
 // closing the fixed nav
@@ -106,7 +122,6 @@ closeBtn.addEventListener('click', () => {
   logoBlue.style.display = 'none'
   logoWhite.style.display = 'block'
   headerBg.style.background = 'transparent'
-
   navLink.forEach((link) => {
     link.style.color = 'white'
   })

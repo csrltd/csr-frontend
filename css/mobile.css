@@ -27,6 +27,7 @@
     font-size: 16px;
   }
   .header .container .nav-header .nav-menu {
+    transition: linear 0.23s;
     display: none;
     position: absolute;
     top: 85px;

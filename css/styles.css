@@ -33,7 +33,6 @@ li a {
   text-transform: capitalize;
 }
 
-button,
 input,
 textarea {
   padding: 17px 35px;
@@ -57,10 +56,11 @@ img {
 
 button {
   cursor: pointer;
-  padding: 17px 35px;
+  padding: 15px 35px;
   border-radius: 2px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: linear 0.2s;
+  font-size: 18PX;
 }
 
 .container {
@@ -71,11 +71,31 @@ button {
 
 .btn-white {
   background-color: white;
-  color: #4565af;
+  color: #2A2D7C;
   border: 1px solid white;
 }
 .btn-white:hover {
   background-color: transparent;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #2A2D7C;
+  color: white;
+}
+.btn-blue:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-blue-outline {
+  color: #2A2D7C;
+  border: 2px solid #2A2D7C;
+  background-color: transparent;
+}
+.btn-blue-outline:hover {
+  background-color: #2A2D7C;
   color: white;
 }
 
@@ -170,21 +190,6 @@ button {
 .header .container .nav-header .nav-menu .links .link {
   font-size: 18px;
 }
-.header .container .nav-header .nav-menu .links .contact-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #4565af;
-  padding: 10px 25px;
-  border-radius: 2px;
-}
-.header .container .nav-header .nav-menu .links button {
-  font-size: 24px;
-  color: #f6f9fe;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
-}
 .header .container .nav-header .nav-toggle {
   display: none;
   color: #f6f9fe;
@@ -196,13 +201,13 @@ button {
 .header .container .nav-header .nav-close-btn {
   color: #f6f9fe;
   font-size: 30px;
-  color: #4565af;
+  color: #2A2D7C;
   display: none;
 }
 
 footer {
   padding-top: 50px;
-  background-color: #4565af;
+  background-color: #2A2D7C;
   color: white;
 }
 footer .container .row {
@@ -285,7 +290,7 @@ footer .container .row .links .footer-links a {
   color: #f6f9fe;
 }
 footer .copy {
-  background-color: #0937bb;
+  background-color: #1a1c5e;
   padding: 12px 0;
   margin-top: 10px;
 }
@@ -328,7 +333,7 @@ footer .copy .container .row .social-media img {
   gap: 12px;
 }
 .hero .hero-btns .hero-btn1 {
-  background-color: #4565af;
+  background-color: #2A2D7C;
   padding: 20px 10px;
   border: transparent;
   border-radius: 2px;
@@ -433,7 +438,7 @@ footer .copy .container .row .social-media img {
   margin-bottom: 12px;
 }
 .about .container .col .row a {
-  color: #4565af;
+  color: #2A2D7C;
   text-decoration: underline;
 }
 
@@ -463,7 +468,7 @@ footer .copy .container .row .social-media img {
 .mission .container .row-vision-mission .col-vision-mission {
   border-radius: 2px;
   padding: 50px;
-  background-color: #4565af;
+  background-color: #2A2D7C;
   color: #f6f9fe;
 }
 .mission .container .row-vision-mission .img-frame img {
@@ -488,7 +493,7 @@ footer .copy .container .row .social-media img {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  background-color: #e5eafb;
+  background-color: rgba(42, 45, 124, 0.062745098);
   border-radius: 2px;
   padding: 30px;
   gap: 12px;
@@ -512,12 +517,12 @@ footer .copy .container .row .social-media img {
   padding-top: 50px;
 }
 .partnership .container .partnership-content {
-  background-color: #4565af;
+  background-color: #2A2D7C;
   text-align: center;
   display: grid;
   justify-content: center;
   gap: 24px;
-  background-color: #4565af;
+  background-color: #2A2D7C;
   border-radius: 2px;
   color: white;
   padding: 50px;
@@ -611,7 +616,7 @@ footer .copy .container .row .social-media img {
 }
 .contacts .container .col .row .col-1 .row-1 .office .office-title .icon {
   font-size: 28px;
-  color: #4565af;
+  color: #2A2D7C;
 }
 .contacts .container .col .row .col-1 .row-1 .office .office-title h3 {
   text-transform: capitalize;
@@ -637,22 +642,22 @@ footer .copy .container .row .social-media img {
 }
 .contacts .container .col .row .form-container .form input:focus,
 .contacts .container .col .row .form-container .form textarea:focus {
-  border: 1px solid #4565af;
+  border: 1px solid #2A2D7C;
 }
 .contacts .container .col .row .form-container input[type=submit] {
   width: 200px;
   font-size: 18px;
-  background-color: #4565af;
+  background-color: #2A2D7C;
   color: white;
-  border: 1px solid #4565af;
+  border: 1px solid #2A2D7C;
 }
 .contacts .container .col .row .form-container input[type=submit]:hover {
   background-color: white;
-  color: #4565af;
+  color: #2A2D7C;
 }
 .contacts .container .col .row .form-container .submit-btn {
   border-radius: 2px;
-  background-color: #4565af;
+  background-color: #2A2D7C;
   color: #f6f9fe;
   border: transparent;
   width: 201px;
@@ -702,13 +707,13 @@ footer .copy .container .row .social-media img {
   width: 20vw;
   height: 320px;
   border-radius: 2px;
-  background-color: #e5eafb;
+  background-color: rgba(42, 45, 124, 0.062745098);
 }
 .slider-container .slider .card .customer-testimonial {
   padding: 20px 20px 50px 20px;
 }
 .slider-container .slider .card .customer-profile {
-  background-color: #4565af;
+  background-color: #2A2D7C;
   border-radius: 0 0 2px 2px;
   color: white;
   margin-top: 50;
@@ -738,7 +743,7 @@ footer .copy .container .row .social-media img {
   position: absolute;
   top: 50%;
   font-size: 32px;
-  color: #4565af;
+  color: #2A2D7C;
 }
 .slider-container .prev-btn {
   left: -30px;
@@ -885,7 +890,7 @@ footer .copy .container .row .social-media img {
      object-fit: cover;
 }
 .our-team .container .row .profile h4 {
-  color: #4565af;
+  color: #2A2D7C;
   font-size: 18px;
 }
 
@@ -1034,7 +1039,7 @@ footer .copy .container .row .social-media img {
   display: none;
 }
 .coming-soon .container .row .col-2 h1 {
-  color: #4565af;
+  color: #2A2D7C;
   text-transform: capitalize;
 }
 .coming-soon .container .row .col-2 .coming-soon-contacts {
@@ -1046,5 +1051,5 @@ footer .copy .container .row .social-media img {
   gap: 12px;
 }
 .coming-soon .container .row .col-2 .social-media a i {
-  color: #4565af;
+  color: #2A2D7C;
 }/*# sourceMappingURL=styles.css.map */

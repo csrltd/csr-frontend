@@ -1,5 +1,5 @@
-$color-blue: #4565af;
-$color-blue-fade: #e5eafb;
+$primary-color: #4565af;
+$primary-color-fade: #e5eafb;
 $whitesmoke: #f6f9fe;
 $tex-color: #3d3d3d;
 $border-radius: 10px;
@@ -43,6 +43,7 @@ $border-radius: 10px;
           }
   
           .nav-menu {
+            transition: linear 0.23s;
             display: none;
             position: absolute;
             top: 85px;
@@ -78,7 +79,7 @@ $border-radius: 10px;
             bottom: 0;
 
             a {
-              color: $color-blue;
+              color: $primary-color;
             }
 
             .fixed-nav-links {
@@ -92,7 +93,7 @@ $border-radius: 10px;
               }
 
               .contact-btn {
-                background-color: $color-blue;
+                background-color: $primary-color;
                 color: $whitesmoke;
                 display: flex;
                 align-items: center;
