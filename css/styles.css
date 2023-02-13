@@ -1,5 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap");
+@font-face {
+  font-family: "Futura Book";
+  src: url("/fonts/FuturaBook/Futura Book Regular.otf");
+}
+@font-face {
+  font-family: "Redwing";
+  src: url("/fonts/Redwing/Redwing-Medium.otf");
+}
+@font-face {
+  font-family: "Redwing light";
+  src: url("/fonts/Redwing/Redwing-Light.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +21,20 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Futura Book", sans-serif;
   color: #3d3d3d;
-  font-size: 18px;
+  font-size: 20px;
   background-color: white;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Redwing", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Redwing light";
 }
 
 ul {
@@ -29,7 +49,6 @@ a {
 
 li a {
   color: white;
-  font-family: "Lato", sans-serif;
   text-transform: capitalize;
 }
 
@@ -38,16 +57,6 @@ textarea {
   padding: 17px 35px;
   border-radius: 2px;
   transition: linear 0.3s;
-}
-
-.heading {
-  font-size: 45px;
-  font-weight: bold;
-  font-family: "Archivo Black", sans-serif;
-}
-
-p {
-  font-family: "Nunito Sans", sans-serif;
 }
 
 img {
@@ -60,6 +69,7 @@ button {
   border-radius: 2px;
   border: 2px solid transparent;
   transition: linear 0.2s;
+  font-family: "Futura Book", sans-serif;
   font-size: 18PX;
 }
 
@@ -123,9 +133,10 @@ button {
 
 .page-intro {
   color: white;
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/csr-images/Picture1.jpg");
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 500px;
 }
 .page-intro .container {
@@ -189,6 +200,9 @@ button {
 }
 .header .container .nav-header .nav-menu .links .link {
   font-size: 18px;
+}
+.header .container .nav-header .nav-menu .links .link .nav-link {
+  font-family: "Futura Book" sans-serif !important;
 }
 .header .container .nav-header .nav-toggle {
   display: none;
@@ -330,20 +344,12 @@ footer .copy .container .row .social-media img {
 .hero .hero-btns {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 .hero .hero-btns .hero-btn1 {
-  background-color: #2A2D7C;
-  padding: 20px 10px;
-  border: transparent;
-  border-radius: 2px;
   display: flex;
   align-items: center;
   gap: 9px;
-  width: 200px;
-}
-.hero .hero-btns .hero-btn1 img {
-  max-width: 14px;
 }
 .hero .hero-btns .hero-btn1 a {
   color: #f6f9fe;
@@ -351,22 +357,18 @@ footer .copy .container .row .social-media img {
   font-weight: bold;
   margin-left: 20px;
 }
-.hero .hero-btns .hero-btn2 {
-  background-color: rgba(52, 98, 226, 0.4784313725);
-  padding: 14px 10px;
-  border: transparent;
-  border-radius: 2px;
+.hero .hero-btns .btn a {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 12px;
+  color: white;
 }
-.hero .hero-btns .hero-btn2 img {
-  max-width: 24px;
+.hero .hero-btns .btn a img {
+  max-width: 32px;
 }
-.hero .hero-btns .hero-btn2 a {
-  color: #f6f9fe;
-  font-size: 17px;
+.hero .hero-btns .btn a span {
   text-decoration: underline;
+  font-size: 24px;
   font-weight: lighter;
 }
 
@@ -390,12 +392,21 @@ footer .copy .container .row .social-media img {
   width: 300px;
   height: 96px;
   padding: 35px 17px;
+  transition: linear 0.3s;
 }
-.services-section .container .row .col img {
-  max-width: 36px;
+.services-section .container .row .col i {
+  font-size: 32px;
+  color: #4365AF;
 }
 .services-section .container .row .col h3 {
   text-transform: capitalize;
+}
+.services-section .container .row .col:hover {
+  background-color: #2A2D7C;
+  color: white;
+}
+.services-section .container .row .col:hover i {
+  color: white;
 }
 
 .about {
@@ -417,14 +428,15 @@ footer .copy .container .row .social-media img {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
-  gap: 41px;
+  justify-content: space-between;
+  gap: 150px;
   border-radius: 10px;
 }
 .about .container .col .row .about-description {
   width: 50%;
 }
 .about .container .col .row .about-img img {
-  width: 500px;
+  width: 100%;
   border-radius: 2px;
 }
 .about .container .col .row h2 {
@@ -498,19 +510,27 @@ footer .copy .container .row .social-media img {
   padding: 30px;
   gap: 12px;
   height: 300px;
+  transition: linear 0.3s;
 }
 .services-details .container .col .row .title-col {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.services-details .container .col .row .title-col .icon {
-  width: 40px;
-  height: 30px;
+.services-details .container .col .row .title-col i {
+  font-size: 32px;
+  color: #4365AF;
 }
 .services-details .container .col .row .title-col h2 {
   text-transform: capitalize;
   font-size: 20px;
+}
+.services-details .container .col .row:hover {
+  background-color: #2A2D7C;
+  color: white;
+}
+.services-details .container .col .row:hover i {
+  color: white;
 }
 
 .partnership {
@@ -632,6 +652,7 @@ footer .copy .container .row .social-media img {
 .contacts .container .col .row .form-container .form textarea {
   width: 100%;
   border: 1px solid #3d3d3d;
+  font-family: "Futura Book", sans-serif;
 }
 .contacts .container .col .row .form-container .form input::-moz-placeholder, .contacts .container .col .row .form-container .form textarea::-moz-placeholder {
   font-size: 16px;
