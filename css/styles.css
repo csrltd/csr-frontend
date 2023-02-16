@@ -115,34 +115,34 @@ button {
   text-transform: uppercase;
 }
 
-.breadchrums {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.breadchrums a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: white;
-  text-decoration: underline;
-}
-.breadchrums a .prev-page {
-  text-decoration: underline;
-}
-
 .page-intro {
   color: white;
   background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: auto;
+  padding: 100px 0;
 }
 .page-intro .container {
-  padding-top: 200px;
+  padding-top: 100px;
   display: grid;
   gap: 24px;
+}
+.page-intro .container .breadchrums {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.page-intro .container .breadchrums a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: underline;
+}
+.page-intro .container .breadchrums a .prev-page {
+  text-decoration: underline;
 }
 .page-intro .container .page-summary {
   margin-right: 40%;
@@ -593,9 +593,6 @@ footer .copy .container .row .social-media img {
 }
 .contacts .container .contacts-heading {
   padding-bottom: 24px;
-}
-.contacts .container .contacts-heading p {
-  width: 50%;
 }
 .contacts .container .col {
   margin-top: 50px;
