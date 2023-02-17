@@ -39,4 +39,20 @@
   footer .copy .container .row .social-media {
     justify-content: start;
   }
+  .about .container .col .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about .container .col .row .about-description {
+    width: 100%;
+  }
+  .about .container .col .row-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 810px) {
+  .about .container .col .row {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=mobileFixed.css.map */

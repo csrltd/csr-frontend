@@ -498,6 +498,7 @@ footer {
 }
 
 //About Section
+// changed this section
 
 .about {
   border-radius: $border-radius;
@@ -521,34 +522,32 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         gap: 150px;
-
         border-radius: 10px;
 
-
-        .about-description {
-          width: 50%;
-        }
+        // .about-description {
+        //   width: 50%;
+        // }
 
         .about-img {
           img {
             width: 100%;
+            object-fit: cover;
             border-radius: $border-radius;
           }
         }
 
         h2 {
           text-transform: capitalize;
-          margin-bottom: 22px;
+          // margin-bottom: 22px;
           font-size: 32px;
           font-weight: 700;
           line-height: 38px;
         }
 
-        p {
-          margin-bottom: 12px;
-        }
+        // p {
+        //   margin-bottom: 12px;
+        // }
 
         a {
           color: $primary-color;

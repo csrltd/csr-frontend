@@ -120,23 +120,6 @@
     width: 100%;
     justify-content: center;
   }
-  .about .container .col .row {
-    flex-direction: column;
-  }
-  .about .container .col .row .about-description {
-    width: 100%;
-    padding: 0 30px 30px 30px;
-  }
-  .about .container .col .row .about-img img {
-    width: 350px;
-  }
-  .about .container .col .row-reverse {
-    flex-direction: column-reverse;
-    padding-left: 0;
-  }
-  .about .container .col .row-not-reverse {
-    padding-right: 0;
-  }
   .partnership {
     padding: 0;
   }

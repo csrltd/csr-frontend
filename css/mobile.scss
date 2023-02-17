@@ -162,34 +162,35 @@ $border-radius: 10px;
     }
   
     //About Section
+    // changed this section in the new mobile css file
   
-    .about {
-      .container {
-        .col {
-          .row {
-            flex-direction: column;
-            .about-description {
-              width: 100%;
-              padding: 0 30px 30px 30px;
-            }
+    // .about {
+    //   .container {
+    //     .col {
+    //       .row {
+    //         flex-direction: column;
+    //         .about-description {
+    //           width: 100%;
+    //           padding: 0 30px 30px 30px;
+    //         }
   
-            .about-img {
-              img {
-                width: 350px;
-              }
-            }
-          }
-          .row-reverse {
-            flex-direction: column-reverse;
-            padding-left: 0;
+    //         .about-img {
+    //           img {
+    //             width: 350px;
+    //           }
+    //         }
+    //       }
+    //       .row-reverse {
+    //         flex-direction: column-reverse;
+    //         padding-left: 0;
           
-          }
-          .row-not-reverse {
-            padding-right: 0;        
-          }
-        }
-      }
-    }
+    //       }
+    //       .row-not-reverse {
+    //         padding-right: 0;        
+    //       }
+    //     }
+    //   }
+    // }
   
     //Partnership
   
