@@ -5,7 +5,6 @@
     .heading {
         font-size: 22px;
     }
-
     .hero {
         .container {
             .hero-heading {
@@ -15,56 +14,96 @@
     }
 }
 
-// footer
-@media screen and (max-width: 540px) {
-    footer {
-      .container {
-        .row {
-          flex-direction: column;
-          gap: 50px;
+@media screen and (max-width:540px) {
+    // HOME PAGE
 
-          .col {
-            width: 100%;
-          }
-        }
+    // footer
+    footer {
+        .container {
+          .row {
+            flex-direction: column;
+            gap: 50px;
   
-        .footer-blogs {
-          .col {
-            .blog {
-              display: flex;
-              align-items: center;
-              gap: 12px;
-              flex-direction: row;
-              padding: 12px 0;
+            .col {
+              width: 100%;
             }
-            .summary {
-              p {
-                width: 100%;
+          }
+    
+          .footer-blogs {
+            .col {
+              .blog {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-direction: row;
+                padding: 12px 0;
+              }
+              .summary {
+                p {
+                  width: 100%;
+                }
               }
             }
           }
         }
-      }
-  
-      .copy {
-        margin-top: 50px;
-        padding: 20px 0;
-  
-        .container {
-          .row {
-            flex-direction: column-reverse;
-            gap: 24px;
-            .menu-links {
-              flex-wrap: wrap;
-              width: 100%;
-            }
-  
-            .social-media {
-              justify-content: start;
+    
+        .copy {
+          margin-top: 50px;
+          padding: 20px 0;
+    
+          .container {
+            .row {
+              flex-direction: column-reverse;
+              gap: 24px;
+              .menu-links {
+                flex-wrap: wrap;
+                width: 100%;
+              }
+    
+              .social-media {
+                justify-content: start;
+              }
             }
           }
         }
-      }
+    }
+
+    // about section
+    .about {
+        .container {
+            .col {
+
+                .row {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .about-description {
+                        width: 100%;
+                    }
+                }
+
+                .row-reverse {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+        }
     }
 }
+
+
+@media screen and (max-width: 810px) {
+    // ABOUT PAGE
+    .about {
+        .container {
+            .col {
+                .row {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+
 
