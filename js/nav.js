@@ -85,10 +85,3 @@ closeBtn.addEventListener('click', () => {
     link.style.color = 'white'
   })
 })
-
-
-
-
-
-
-
