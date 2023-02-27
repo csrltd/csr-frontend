@@ -559,50 +559,6 @@ footer {
   }
 }
 
-.mission {
-  padding-top: 100px;
-
-  .container {
-    .row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 150px;
-
-      .col {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        flex: 1;
-        gap: 12px;
-
-        img {
-          border-radius: $border-radius;
-        }
-      }
-    }
-
-    .row-vision-mission {
-      gap: 30px;
-      padding-top: 100px;
-
-      .col-vision-mission {
-        border-radius: $border-radius;
-        padding: 50px;
-        background-color: $primary-color;
-        color: $whitesmoke;
-      }
-
-      .img-frame {
-        img {
-          height: 300px;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-}
-
 .services-details {
   .container {
     h1 {
@@ -999,13 +955,11 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: 50px;
 
       .col {
-        background-color: $whitesmoke;
-        padding: 30px;
         border-radius: $border-radius;
-        width: 60%;
+        width: 45%;
 
         h1 {
           font-weight: bolder;
@@ -1018,18 +972,56 @@ footer {
       }
 
       .col-description {
-        padding: 0;
         background-color: transparent;
-        width: 40%;
-
-        img {
-          width: 401px;
-        }
+        width: 55%;
       }
     }
   }
 }
 
+.mission {
+  padding-top: 100px;
+
+  .container {
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 150px;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex: 1;
+        gap: 12px;
+
+        img {
+          border-radius: $border-radius;
+        }
+      }
+    }
+
+    .row-vision-mission {
+      gap: 30px;
+      padding-top: 100px;
+
+      .col-vision-mission {
+        border-radius: $border-radius;
+        padding: 50px;
+        background-color: $primary-color;
+        color: $whitesmoke;
+      }
+
+      .img-frame {
+        img {
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
 .our-team {
   position: relative;
   z-index: 0;
@@ -1067,6 +1059,7 @@ footer {
       img {
         width: 80px;
         height: 80px;
+        object-fit: cover;
         border-radius: $border-radius;
       }
     }

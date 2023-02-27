@@ -1,10 +1,10 @@
-//team profiles 
 const Godwin = document.querySelector('.Godwin')
 const victor = document.querySelector('.victor')
 const jp = document.querySelector('.jp')
 const Alphonse = document.querySelector('.Alphonse')
 const Patient = document.querySelector('.Patient')
 const Tinah = document.querySelector('.Tinah')
+const charles = document.querySelector('.charles')
 
 
 //bios
@@ -14,6 +14,7 @@ const jpBio = document.querySelector('.jpBio')
 const AlphonseBio = document.querySelector('.AlphonseBio')
 const PatientBio = document.querySelector('.PatientBio')
 const TinahBio = document.querySelector('.TinahBio')
+const charlesBio = document.querySelector('.charlesBio')
 
 
 //event listeners
@@ -40,6 +41,10 @@ Patient.addEventListener('click', () => {
 Tinah.addEventListener('click', () => {
     TinahBio.style.visibility = 'visible'
 })
+charles.addEventListener('click', () => {
+    charlesBio.style.visibility = 'visible'
+})
+
 
 const overlays = document.querySelectorAll('.overlay');
 const closeButtons = document.querySelectorAll('.close-btn');
@@ -49,9 +54,3 @@ closeButtons.forEach((closeButton) => {
     event.target.closest('.overlay').style.visibility = 'hidden';
   });
 });
-
-
-
-
-
-
