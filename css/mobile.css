@@ -101,37 +101,6 @@
   }
 }
 @media screen and (max-width: 540px) {
-  footer .container .row {
-    flex-direction: column;
-    gap: 50px;
-  }
-  footer .container .footer-blogs .col .blog {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-direction: row;
-    padding: 12px 0;
-  }
-  footer .container .footer-blogs .col .summary p {
-    width: 100%;
-  }
-  footer .copy {
-    margin-top: 50px;
-    padding: 20px 0;
-  }
-  footer .copy .container .row {
-    flex-direction: column-reverse;
-    gap: 24px;
-  }
-  footer .copy .container .row .menu-links {
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  footer .copy .container .row .social-media {
-    justify-content: start;
-  }
-}
-@media screen and (max-width: 540px) {
   .hero {
     text-align: center;
     padding-top: 250px;
@@ -150,29 +119,6 @@
   .services-section .container .row .col {
     width: 100%;
     justify-content: center;
-  }
-  .about .container .col .row {
-    flex-direction: column;
-  }
-  .about .container .col .row .about-description {
-    width: 100%;
-    padding: 0 30px 30px 30px;
-  }
-  .about .container .col .row .about-img img {
-    width: 350px;
-  }
-  .about .container .col .row-reverse {
-    flex-direction: column-reverse;
-    padding-left: 0;
-  }
-  .about .container .col .row-not-reverse {
-    padding-right: 0;
-  }
-  .services-details .container .col {
-    flex-direction: column;
-  }
-  .services-details .container .col .row {
-    height: 240px;
   }
   .partnership {
     padding: 0;
@@ -270,9 +216,6 @@
   }
   .blog-page-header {
     padding: 50px 0;
-  }
-  .blog-page-header .container .col .heading {
-    font-size: 24px;
   }
   .blog-page-header .container .col img {
     height: 120px;

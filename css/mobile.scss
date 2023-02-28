@@ -133,54 +133,7 @@ $border-radius: 10px;
     }
   }
   
-  @media screen and (max-width: 540px) {
-    footer {
-      .container {
-        .row {
-          flex-direction: column;
-          gap: 50px;
-        }
-  
-        .footer-blogs {
-          .col {
-            .blog {
-              display: flex;
-              align-items: center;
-              gap: 12px;
-              flex-direction: row;
-              padding: 12px 0;
-            }
-            .summary {
-              //padding-left: 12px;
-              p {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-  
-      .copy {
-        margin-top: 50px;
-        padding: 20px 0;
-  
-        .container {
-          .row {
-            flex-direction: column-reverse;
-            gap: 24px;
-            .menu-links {
-              flex-wrap: wrap;
-              width: 100%;
-            }
-  
-            .social-media {
-              justify-content: start;
-            }
-          }
-        }
-      }
-    }
-  }
+ 
 
 //HOME PAGE
 @media screen and (max-width: 540px) {
@@ -209,47 +162,35 @@ $border-radius: 10px;
     }
   
     //About Section
+    // changed this section in the new mobile css file
   
-    .about {
-      .container {
-        .col {
-          .row {
-            flex-direction: column;
-            .about-description {
-              width: 100%;
-              padding: 0 30px 30px 30px;
-            }
+    // .about {
+    //   .container {
+    //     .col {
+    //       .row {
+    //         flex-direction: column;
+    //         .about-description {
+    //           width: 100%;
+    //           padding: 0 30px 30px 30px;
+    //         }
   
-            .about-img {
-              img {
-                width: 350px;
-              }
-            }
-          }
-          .row-reverse {
-            flex-direction: column-reverse;
-            padding-left: 0;
+    //         .about-img {
+    //           img {
+    //             width: 350px;
+    //           }
+    //         }
+    //       }
+    //       .row-reverse {
+    //         flex-direction: column-reverse;
+    //         padding-left: 0;
           
-          }
-          .row-not-reverse {
-            padding-right: 0;        
-          }
-        }
-      }
-    }
-  
-    //Services
-    .services-details {
-      .container {
-        .col {
-          flex-direction: column;
-
-          .row {
-            height: 240px;
-          }
-        }
-      }
-    }
+    //       }
+    //       .row-not-reverse {
+    //         padding-right: 0;        
+    //       }
+    //     }
+    //   }
+    // }
   
     //Partnership
   
@@ -415,9 +356,9 @@ $border-radius: 10px;
         padding: 50px 0;
         .container {
             .col {
-                .heading {
-                    font-size: 24px;
-                }
+                // .heading {
+                //     font-size: 24px;
+                // }
                 img {
                     height: 120px;
                 }
@@ -634,3 +575,9 @@ $border-radius: 10px;
     }
   }
 }
+
+
+
+
+
+
