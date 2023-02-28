@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="css/application-form.css">
+</head>
+
+<body>
+    <section class="application">
+        <div class="container">
+            <div class="row">
+                <div class="col col-left">
+                    <img src="/img/logo-white 1.png" alt="" class="logo-one">
+                    <img src="/img/Business is growing.png" alt="" class="img2">
+                    
+                   
+                </div>
+                <div class="col-form">
+                    <div class="form-container">
+                        <img src="/img/CSR-blue logo (1).png" alt="" class="blue-logo">
+                        <form id="form2">
+                           
+                            <div id="general">
+                                <h1>General Information</h1>
+                                <div class="names">
+                                    <input type="text" name="firstName" placeholder="First Name*">
+                                    <input type="text" name="lastName" placeholder="Last Name*">
+                                </div>
+                                <input type="id" name="" class="idOrPassport" placeholder="National ID or Passport*">
+                                <div class="names">
+                                    <input type="text" name="email" placeholder="Email*">
+                                    <input type="text" name="telephone" placeholder="Telephone*">
+                                </div>
+                                <div class="names">
+                                    <input type="date" name="dateofbirth" placeholder="Date of birth">
+                                    <input type="text" name="gender" placeholder="Gender">
+                                </div>
+                                <button id="btnGeneral">Next</button>
+                            </div>
+                            <div id="documents">
+                                <h1>Applicant Documents</h1>
+                                <input type="file" name="cv" placeholder="CV*">
+                                <input type="file" name="nationalIdOrPassport" placeholder="National ID or Passport*">
+
+                                <input type="file" name="workCertificate" placeholder="Work  Certificate*">
+
+                                <button id="btnDocuments">Next</button>
+                            </div>
+
+                            <div id="reference">
+                                <h1>References</h1>
+                                <input type="text" name="refereeName" placeholder="Full Names*">
+                                <input type="email" name="refereeAddress" placeholder="Address*">
+
+                                <input type="phone" name="refereeTelephone" placeholder="Telephone*">
+
+                                <input type="text" name="refereeInstitution" placeholder="Referee institution*">
+                                <input type="email" name="refereeOccupation" placeholder="Referee Ocupation*">
+
+                                <button type="submit" id="btnFinish">Finish</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="/js/application.js"></script>
+</body>
+
+</html>
