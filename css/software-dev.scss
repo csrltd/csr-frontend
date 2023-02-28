@@ -86,18 +86,6 @@ body {
                 margin-right: 20px;
                 padding: 20px 0;
 
-
-                .icon {
-                    height: 50px;
-                    width: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: #2a2d7c;
-                    color: white;
-                    border-radius: $border-radius;
-                }
-
                 &:hover {
                     margin: 0 20px 20px 0;
                     background-color: $secondary-color;
@@ -193,6 +181,7 @@ body {
 
 @media screen and (max-width: 540px) {
     .software-dev-hero {
+        display: none;
         padding: 150px 0;
         .container {
             .row {
@@ -225,6 +214,9 @@ body {
                     }
                 }
             }
+            
         }
     }
+
+
 }
