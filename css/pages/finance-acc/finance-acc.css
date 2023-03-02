@@ -64,11 +64,20 @@
   flex-direction: column;
   gap: 48px;
 }
+.services .container a {
+  text-decoration: underline;
+  color: #003ECB;
+}
 .services .container .services-paragraph {
   max-width: 70%;
 }
 .services .container .row {
   gap: 48px;
+}
+.services .container .row .col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .about-summary {
