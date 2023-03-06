@@ -25,10 +25,10 @@
         <div class="container">
             <!-- navbar -->
             <nav class="nav-header">
-                <div class="brand">
+                <a href="/" class="brand">
                     <img class="logo white-logo" src="./img/branding/logo-white.svg" alt="">
-                    <img class="logo blue-logo" src="./img/branding/logo-blue.svg" alt="">
-                </div>
+                    <img class="logo blue-logo" src="./img/branding/logo dark blue.png" alt="">
+                </a>
                 <div class="nav-menu">
                     <ul class="links">
                         <li class="link">
@@ -38,7 +38,40 @@
                             <a class="nav-link" href="about.html">about us</a>
                         </li>
                         <li class="link">
-                            <a class="nav-link" href="#services">services</a>
+                            <a class="nav-link" href="#" class="service-link">
+                                services
+                                <div class="open-dropdown">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            </a>
+                            <div class="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h3>Accounting Services</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-pencil-ruler"></i>
+                                            <h3>Business Branding</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/software-dev.html">
+                                            <i class="fas fa-code"></i>
+                                            <h3>Software Development</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/social-media.html">
+                                            <i class="fas fa-share-alt"></i>
+                                            <h3>Digital Marketing</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="link">
                             <a class="nav-link" href="">gallery</a>
@@ -47,46 +80,20 @@
                             <a class="nav-link" href="blog.html">news room</a>
                         </li>
                         <li class="link">
-                            <a href="#contacts">
+                            <a href="/contact.html">
                                 <button class="btn-blue btn-header">Get in touch</button>
                             </a>
-
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="nav-fixed">
-                    <div class="fixed-nav-links">
-                        <ul class="links">
-                            <li class="link">
-                                <a href="index.html">home</a>
-                            </li>
-                            <li class="link">
-                                <a href="about.html">about us</a>
-                            </li>
-                            <li class="link">
-                                <a href="#services">services</a>
-                            </li>
-                            <li class="link">
-                                <a href="">gallery</a>
-                            </li>
-                            <li class="link">
-                                <a href="blog.html">news room</a>
-                            </li>
-                            <li class="link contact-btn">
-                                <a href="#contacts">contact</a>
-                                <img src="./img/icons/Vector.svg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
                 <div class="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
                 <div class="nav-close-btn">
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
+            </nav>
         </div>
-        </nav>
     </header>
 
     <section class="page-intro">
