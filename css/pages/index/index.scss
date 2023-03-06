@@ -264,6 +264,12 @@ $border-radius: 2px;
         img {
           width: 100px;
         }
+        a {
+          .csr-logo {
+            width: 150px;
+          }
+        }
+
       }
     }
   }
@@ -338,7 +344,7 @@ $border-radius: 2px;
   
                   .icon {
                     font-size: 28px;
-                    color: $primary-color;
+                    color: $whitesmoke;
                   }
   
                   h3 {

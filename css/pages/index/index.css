@@ -197,6 +197,9 @@
 .partners .container .row img {
   width: 100px;
 }
+.partners .container .row a .csr-logo {
+  width: 150px;
+}
 
 .testimonials {
   display: none;
@@ -263,7 +266,7 @@
 }
 .contacts .container .col .row .col-1 .row-1 .office .office-title .icon {
   font-size: 28px;
-  color: #2A2D7C;
+  color: #f6f9fe;
 }
 .contacts .container .col .row .col-1 .row-1 .office .office-title h3 {
   text-transform: capitalize;
