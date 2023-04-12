@@ -49,6 +49,7 @@ const navLink = document.querySelectorAll('.nav-link')
 const logoBlue = document.querySelector('.blue-logo')
 const logoWhite = document.querySelector('.white-logo')
 const btnHeader = document.querySelector('.btn-header')
+const title = document.title
 
 window.addEventListener('scroll', () => {
   let scrolledPixels = window.scrollY
@@ -86,6 +87,11 @@ window.addEventListener('scroll', () => {
     })
 
     btnHeader.classList.remove('btn-blue-outline')
+  }
+
+  if(title.includes('Finance and Accounting') && scrolledPixels === 0) {
+    logoBlue.style.display = 'block'
+    logoWhite.style.display ='none'
   }
 })
 
