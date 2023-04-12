@@ -1,7 +1,10 @@
 @media screen and (max-width: 540px) {
   .software-dev-hero {
-    display: none;
-    padding: 150px 0;
+    padding: 150px 0 50px 0;
+  }
+  .software-dev-hero .container {
+    text-align: center;
+    gap: 50px;
   }
   .software-dev-hero .container .row {
     gap: 50px;
@@ -9,22 +12,71 @@
   }
   .software-dev-hero .container .row .col {
     width: 100%;
+    gap: 48px;
+    align-items: center;
   }
   .software-dev-hero .container .row .col .heading {
-    width: 80%;
     font-size: 28px;
-    margin-top: -40px;
+    width: 100%;
   }
-  .software-dev-hero .container .row .col .intro-text {
-    margin-top: 170px;
-    width: 70%;
+  .software-dev-hero .container .row .hero-img-col {
+    margin-top: -100px;
   }
   .software-dev-hero .container .row .hero-img-col .hero-img .big-hero-img {
     width: 100%;
-    right: -50px;
-    top: 60px;
+    position: unset;
   }
-  .software-dev-hero .container .row .hero-img-col .hero-img .big-screen {
+  .software-dev-hero .container .what-we-do {
+    background-color: #2A2D7C;
+    color: white;
+    padding: 48px 20px;
+  }
+  .software-dev-hero .container .what-we-do .col .heading {
+    color: white;
+  }
+  .software-dev-hero .container .heading-service .heading {
+    font-size: 28px;
+  }
+  .software-dev-hero .container .services {
+    margin-top: -20px;
+    gap: 24px;
+  }
+  .software-dev-hero .container .services .service {
+    background-color: rgba(42, 45, 124, 0.0705882353);
+    padding: 48px 24px;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+  }
+  .process {
+    padding-bottom: 0;
+  }
+  .process .cta {
+    padding-top: 300px;
+    padding-bottom: 50px;
+  }
+  .process .cta .container .cta-text {
+    max-width: 100%;
+  }
+  .process .container .heading {
+    font-size: 28px;
+  }
+  .process .container .row {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 24px;
+  }
+  .process .container .row .col {
+    width: 100%;
+  }
+  .process .container .row .col .processes {
+    margin-top: 0;
+  }
+  .process .container .row .col img {
+    position: unset;
+    width: 100%;
+  }
+  .projects-section {
     display: none;
   }
 }/*# sourceMappingURL=mobile.css.map */

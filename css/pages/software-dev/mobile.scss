@@ -7,42 +7,121 @@ $border-radius: 2px;
 
 @media screen and (max-width: 540px) {
     .software-dev-hero {
-        display: none;
-        padding: 150px 0;
+        padding: 150px 0 50px 0;
+
         .container {
+            text-align: center;
+            gap: 50px;
+
             .row {
                 gap: 50px;
+                flex-direction: column-reverse;
+
                 .col {
                     width: 100%;
-                    .heading {
-                        width: 80%;
-                        font-size: 28px;
-                        margin-top: -40px;
-                    }
+                    gap: 48px;
+                    align-items: center;
 
-                    .intro-text {
-                        margin-top: 170px;
-                        width: 70%;
+                    .heading {
+                        font-size: 28px;
+                        width: 100%;
                     }
                 }
-                flex-direction: column-reverse;
+
                 .hero-img-col {
+                    margin-top: -100px;
+
                     .hero-img {
+
                         .big-hero-img {
                             width: 100%;
-                            right: -50px;
-                            top: 60px;
+                            position: unset;
 
                         }
-                        .big-screen {
-                            display: none;
-                        }
+
                     }
                 }
             }
-            
+
+            .what-we-do {
+                background-color: $primary-color;
+                color: white;
+                padding: 48px 20px;
+
+                .col {
+                    .heading {
+                        color: white;
+                    }
+                }
+
+            }
+
+            .heading-service {
+                .heading {
+                    font-size: 28px;
+                }
+            }
+
+            .services {
+                margin-top: -20px;
+                gap: 24px;
+
+                .service {
+                    background-color: #2a2d7c12;
+                    padding: 48px 24px;
+                    display: grid;
+                    gap: 20px;
+                    justify-items: center;
+                }
+            }
+
         }
     }
 
+    .process {
+        padding-bottom: 0;
+
+        .cta {
+            padding-top: 300px;
+            padding-bottom: 50px;
+
+            .container {
+                .cta-text {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .container {
+            .heading {
+                font-size: 28px;
+            }
+
+            .row {
+                flex-direction: column;
+                gap: 50px;
+                margin-top: 24px;
+
+                .col {
+                    width: 100%;
+
+                    .processes {
+                        margin-top: 0;
+                    }
+                }
+
+                .col {
+                    img {
+                        position: unset;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        display: none;
+    }
 
 }
