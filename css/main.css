@@ -114,6 +114,11 @@ button {
   border-color: white;
 }
 
+.btn-blue-on-white:hover {
+  color: #2A2D7C;
+  border-color: #2A2D7C;
+}
+
 .btn-blue-outline {
   color: #2A2D7C;
   border: 2px solid #2A2D7C;

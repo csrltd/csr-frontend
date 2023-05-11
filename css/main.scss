@@ -125,6 +125,13 @@ button {
   }
 }
 
+.btn-blue-on-white {
+  &:hover {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
 .btn-blue-outline {
   color: $primary-color;
   border: 2px solid $primary-color;
