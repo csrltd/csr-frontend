@@ -1,0 +1,46 @@
+.kwibuka-header {
+    background-color: #657686;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .kwibuka29-img {
+        max-width: 800px;
+    }
+}
+
+.kwibuka-poem {
+    max-width: 800px;
+    padding: 80px 0;
+
+    p {
+        strong {
+            font-weight: bold;
+            font-size: 32px;
+        }
+    }
+}
+
+.author {
+    text-align: left;
+}
+
+.back-home {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .icon {
+        background-color: transparent;
+
+        color: black;
+
+        img {
+            width: 28px;
+        }
+    }
+
+    .home {
+        text-decoration: underline;
+    }
+}

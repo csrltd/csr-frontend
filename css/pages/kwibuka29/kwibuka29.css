@@ -1,0 +1,38 @@
+.kwibuka-header {
+  background-color: #657686;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kwibuka-header .kwibuka29-img {
+  max-width: 800px;
+}
+
+.kwibuka-poem {
+  max-width: 800px;
+  padding: 80px 0;
+}
+.kwibuka-poem p strong {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.author {
+  text-align: left;
+}
+
+.back-home {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.back-home .icon {
+  background-color: transparent;
+  color: black;
+}
+.back-home .icon img {
+  width: 28px;
+}
+.back-home .home {
+  text-decoration: underline;
+}/*# sourceMappingURL=kwibuka29.css.map */

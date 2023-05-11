@@ -1,0 +1,223 @@
+.header {
+  background-color: white;
+}
+.header .container .nav-header .brand .blue-logo {
+  display: block;
+}
+.header .container .nav-header .brand .white-logo {
+  display: none;
+}
+.header .container .nav-header .nav-menu .links .link .nav-link {
+  color: #2A2D7C;
+}
+
+.it-support-hero {
+  padding: 130px 0;
+}
+.it-support-hero .container {
+  position: relative;
+  background: #f6f9fe;
+  border-radius: 2px;
+  padding: 80px;
+  min-height: 650px;
+}
+.it-support-hero .container .col {
+  display: grid;
+  gap: 24px;
+}
+.it-support-hero .container .col .quick-support {
+  border: 1px solid rgba(42, 45, 124, 0.35);
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+  color: #2A2D7C;
+  width: 80%;
+}
+.it-support-hero .container .col .quick-support .phone-number {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  font-size: 32px;
+}
+.it-support-hero .container .col .quick-support .phone-number img {
+  height: 25px;
+  width: 25px;
+}
+.it-support-hero .container .hero-img-col .hero-img {
+  position: absolute;
+  right: -100px;
+  top: 120px;
+  max-width: 50%;
+}
+
+.about-the-company {
+  padding: 50px 0;
+}
+.about-the-company .container {
+  text-align: center;
+  max-width: 740px;
+  display: grid;
+  gap: 24px;
+}
+
+.what-we-offer {
+  padding: 50px 0;
+}
+.what-we-offer .container .col-img .what-we-offer-img {
+  border-radius: 2px;
+}
+.what-we-offer .container .col-text {
+  width: 65%;
+  display: grid;
+  gap: 24px;
+  padding: 50px;
+}
+.what-we-offer .container .col-text .offer {
+  display: grid;
+  gap: 6px;
+}
+.what-we-offer .container .col-text .offer .offer-title {
+  font-weight: bold;
+  font-family: "Futura Book", sans-serif;
+}
+.what-we-offer .row-text {
+  padding: 80px 0;
+}
+.what-we-offer .row-text .expertise {
+  display: none;
+}
+.what-we-offer .row-text hr {
+  display: none;
+}
+.what-we-offer .row-text .text {
+  display: grid;
+  gap: 12px;
+}
+.what-we-offer .row-text .text .number-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.what-we-offer .row-text .text .number-title .number {
+  background-color: #2A2D7C;
+  height: 32px;
+  width: 32px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq .container {
+  background-color: #f6f9fe;
+  padding: 50px;
+}
+.faq .container .questions {
+  display: grid;
+  gap: 32px;
+}
+.faq .container .questions details p {
+  margin-top: 12px;
+  margin-left: 24px;
+  padding: 30px;
+  background-color: white;
+}
+
+.call-to-action {
+  padding: 80px;
+}
+.call-to-action .container {
+  background-color: #2A2D7C;
+  color: white;
+  flex-direction: column;
+  padding: 80px 300px;
+  gap: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    display: none;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .it-support-hero {
+    padding-bottom: 0;
+  }
+  .it-support-hero .container {
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+    gap: 50px;
+  }
+  .it-support-hero .container .col {
+    width: 100%;
+    text-align: center;
+  }
+  .it-support-hero .container .col .quick-support {
+    margin: auto;
+    gap: 6px;
+  }
+  .it-support-hero .container .col .quick-support .title {
+    font-size: 8px;
+  }
+  .it-support-hero .container .col .quick-support .phone-number {
+    font-size: 18px;
+  }
+  .it-support-hero .container .hero-img-col .hero-img {
+    position: relative;
+    right: unset;
+    top: unset;
+    max-width: 100%;
+  }
+  .what-we-offer {
+    position: relative;
+    padding-top: 0;
+  }
+  .what-we-offer .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .what-we-offer .container .col {
+    width: 100%;
+  }
+  .what-we-offer .container .col-img .what-we-offer-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .what-we-offer .container .col-text {
+    margin-top: 250px;
+    width: 100%;
+    padding: 50px 0;
+  }
+  .what-we-offer .container .col-text .offer {
+    background-color: #f6f9fe;
+    padding: 20px;
+  }
+  .what-we-offer .row-text {
+    display: grid;
+    gap: 32px;
+  }
+  .what-we-offer .row-text hr {
+    display: block;
+    color: #f6f9fe;
+  }
+  .what-we-offer .row-text .expertise {
+    display: block;
+  }
+  .faq .container {
+    padding: 50px 20px;
+  }
+  .call-to-action {
+    padding: 80px 20px;
+  }
+  .call-to-action .container {
+    padding: 50px 20px;
+  }
+}/*# sourceMappingURL=tech-support.css.map */

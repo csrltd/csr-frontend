@@ -28,6 +28,7 @@ $border-radius: 2px;
                     height: 40px;
                 }
             }
+
             // .poem-title {
             //     font-size: 58px;
             // }
@@ -40,17 +41,21 @@ $border-radius: 2px;
             padding: 12px 0;
 
         }
+
         .author {
             text-align: left;
         }
+
         .back-home {
             display: flex;
             align-items: center;
             margin-top: 20px;
+
             .icon {
                 background-color: transparent;
-                
+
                 color: $tex-color;
+
                 img {
                     width: 28px;
                 }

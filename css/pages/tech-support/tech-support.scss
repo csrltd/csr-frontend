@@ -1,0 +1,310 @@
+$primary-color: #2A2D7C;
+$secondary-color: #4365AF;
+$primary-color-fade: #2a2d7c10;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 2px;
+
+.header {
+    background-color: white;
+
+    .container {
+        .nav-header {
+            .brand {
+                .blue-logo {
+                    display: block;
+                }
+
+                .white-logo {
+                    display: none;
+                }
+            }
+
+            .nav-menu {
+                .links {
+                    .link {
+                        .nav-link {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.it-support-hero {
+    padding: 130px 0;
+
+    .container {
+        position: relative;
+        background: $whitesmoke;
+        border-radius: $border-radius;
+        padding: 80px;
+        min-height: 650px;
+
+        .col {
+            display: grid;
+            gap: 24px;
+
+            .quick-support {
+                border: 1px solid rgba(42, 45, 124, 0.35);
+                padding: 18px;
+                display: grid;
+                gap: 12px;
+                color: $primary-color;
+                width: 80%;
+
+                .phone-number {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 6px;
+                    font-weight: bold;
+                    font-size: 32px;
+
+                    img {
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+
+
+            }
+        }
+
+        .hero-img-col {
+            .hero-img {
+                position: absolute;
+                right: -100px;
+                top: 120px;
+                max-width: 50%;
+
+            }
+        }
+    }
+}
+
+.about-the-company {
+    padding: 50px 0;
+
+    .container {
+        text-align: center;
+        max-width: 740px;
+        display: grid;
+        gap: 24px;
+    }
+
+}
+
+.what-we-offer {
+    padding: 50px 0;
+
+    .container {
+        .col-img {
+            .what-we-offer-img {
+                border-radius: $border-radius;
+            }
+        }
+
+        .col-text {
+            width: 65%;
+            display: grid;
+            gap: 24px;
+            padding: 50px;
+
+            .offer {
+                display: grid;
+                gap: 6px;
+
+                .offer-title {
+                    font-weight: bold;
+                    font-family: "Futura Book", sans-serif;
+                }
+
+            }
+        }
+
+    }
+
+    .row-text {
+        padding: 80px 0;
+
+        .expertise {
+            display: none;
+        }
+
+        hr {
+            display: none;
+        }
+
+        .text {
+            display: grid;
+            gap: 12px;
+
+            .number-title {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .number {
+                    background-color: $primary-color;
+                    height: 32px;
+                    width: 32px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.faq {
+    .container {
+        background-color: $whitesmoke;
+        padding: 50px;
+
+        .questions {
+            display: grid;
+            gap: 32px;
+
+            details {
+
+                p {
+                    margin-top: 12px;
+                    margin-left: 24px;
+                    padding: 30px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.call-to-action {
+    padding: 80px;
+
+    .container {
+        background-color: $primary-color;
+        color: white;
+        flex-direction: column;
+        padding: 80px 300px;
+        gap: 24px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .header {
+        display: none;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .it-support-hero {
+        padding-bottom: 0;
+
+        .container {
+            flex-direction: column-reverse;
+            padding: 50px 20px;
+            gap: 50px;
+
+            .col {
+                width: 100%;
+                text-align: center;
+
+                .quick-support {
+                    margin: auto;
+                    gap: 6px;
+
+                    .title {
+                        font-size: 8px;
+                    }
+
+                    .phone-number {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .hero-img-col {
+                .hero-img {
+                    position: relative;
+                    right: unset;
+                    top: unset;
+                    max-width: 100%;
+
+                }
+            }
+        }
+    }
+
+    .what-we-offer {
+        position: relative;
+        padding-top: 0;
+
+        .container {
+            flex-direction: column;
+            padding: 20px;
+
+            .col {
+                width: 100%;
+            }
+
+            .col-img {
+                .what-we-offer-img {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
+
+            .col-text {
+                margin-top: 250px;
+                width: 100%;
+                padding: 50px 0;
+
+                .offer {
+                    background-color: $whitesmoke;
+                    padding: 20px;
+                }
+            }
+
+        }
+
+        .row-text {
+            display: grid;
+            gap: 32px;
+
+            hr {
+                display: block;
+                color: $whitesmoke;
+            }
+
+            .expertise {
+                display: block;
+            }
+        }
+    }
+
+    .faq {
+        .container {
+            padding: 50px 20px;
+        }
+    }
+
+    .call-to-action {
+        padding: 80px 20px;
+
+        .container {
+            padding: 50px 20px;
+        }
+    }
+}
