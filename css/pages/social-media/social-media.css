@@ -1,12 +1,15 @@
 .header {
   background-color: whitesmoke;
 }
+
 .header .container .nav-header .brand .blue-logo {
   display: block;
 }
+
 .header .container .nav-header .brand .white-logo {
   display: none;
 }
+
 .header .container .nav-header .nav-menu .links .link .nav-link {
   color: #2A2D7C;
 }
@@ -18,69 +21,106 @@
   text-align: start;
   position: relative;
 }
+
 .hero-social-media .container .row {
   gap: 24px;
 }
+
 .hero-social-media .container .row .col-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 24px;
 }
+
 .hero-social-media .container .row .col img {
   position: absolute;
   width: 40%;
   right: 0;
   top: 190px;
 }
+
 .hero-social-media .container .row .col .btn-social:hover {
   background-color: white;
   color: #2A2D7C;
   border: #2A2D7C solid 2px;
 }
+
 .hero-social-media .container .social-media {
   cursor: pointer;
 }
+
 .hero-social-media .container .social-media #spin:hover {
-  animation: bounce 0.9s linear;
+  -webkit-animation: bounce 0.9s linear;
+          animation: bounce 0.9s linear;
 }
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   60% {
-    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
   }
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+}
+
 .hero-social-media .container .social-media img {
   width: 50px;
   height: 50px;
 }
+
 .hero-social-media .container .social-media .facebook {
   position: absolute;
   top: 24vh;
   left: 63vw;
 }
+
 .hero-social-media .container .social-media .linkedin {
   position: absolute;
   top: 38vh;
   left: 60vw;
 }
+
 .hero-social-media .container .social-media .instagram {
   position: absolute;
   top: 56vh;
   left: 58vw;
 }
+
 .hero-social-media .container .social-media .youtube {
   position: absolute;
   top: 72vh;
   left: 55vw;
 }
+
 .hero-social-media .container .social-media .twitter {
   position: absolute;
   top: 90vh;
   left: 50vw;
 }
+
 .hero-social-media .container .pattern {
   position: absolute;
   width: 267px;
@@ -93,25 +133,34 @@
   background-color: #f6f9fe;
   padding-top: 350px;
 }
+
 .social-media-services .container .row {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  align-items: start;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 5%;
 }
+
 .social-media-services .container .row .col {
   width: 100%;
   gap: 24px;
   border-radius: 2px;
   margin: 24px 0;
+  display: -ms-grid;
   display: grid;
   gap: 24px;
 }
+
 .social-media-services .container .row .col:hover {
   margin: 0;
   padding: 24px;
   margin-right: 24px;
   background-color: rgba(52, 97, 226, 0.13);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 2px;
   color: #3d3d3d;
@@ -121,6 +170,8 @@
   background-color: #F6F9FE;
   padding: 150px 0 50px 0;
 }
+
 .social-media-section .container .row {
   gap: 96px;
-}/*# sourceMappingURL=social-media.css.map */
+}
+/*# sourceMappingURL=social-media.css.map */

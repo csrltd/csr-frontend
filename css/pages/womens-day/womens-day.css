@@ -3,41 +3,65 @@
   max-width: 500px;
   margin: auto;
 }
+
 .poem .col {
+  display: -ms-grid;
   display: grid;
   place-items: start;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding: 100px 0;
 }
+
 .poem .col .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
+
 .poem .col .title .logo img {
   height: 40px;
 }
+
 .poem .col .poem-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
   padding: 12px 0;
 }
+
 .poem .col .author {
   text-align: left;
 }
+
 .poem .col .back-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
+
 .poem .col .back-home .icon {
   background-color: transparent;
   color: #3d3d3d;
 }
+
 .poem .col .back-home .icon img {
   width: 28px;
 }
+
 .poem .col .back-home .home {
   text-decoration: underline;
 }
@@ -46,4 +70,5 @@
   .poem {
     padding: 0 50px;
   }
-}/*# sourceMappingURL=womens-day.css.map */
+}
+/*# sourceMappingURL=womens-day.css.map */

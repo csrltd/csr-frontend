@@ -1,9 +1,16 @@
 .kwibuka-header {
   background-color: #657686;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .kwibuka-header .kwibuka29-img {
   max-width: 800px;
 }
@@ -12,6 +19,7 @@
   max-width: 800px;
   padding: 80px 0;
 }
+
 .kwibuka-poem p strong {
   font-weight: bold;
   font-size: 32px;
@@ -22,17 +30,25 @@
 }
 
 .back-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
+
 .back-home .icon {
   background-color: transparent;
   color: black;
 }
+
 .back-home .icon img {
   width: 28px;
 }
+
 .back-home .home {
   text-decoration: underline;
-}/*# sourceMappingURL=kwibuka29.css.map */
+}
+/*# sourceMappingURL=kwibuka29.css.map */

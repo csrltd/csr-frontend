@@ -1,6 +1,9 @@
 @media screen and (max-width: 540px) {
   .description .container .row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .description .container .row .col {
     width: 100%;
@@ -12,7 +15,10 @@
     padding-top: 0;
   }
   .mission .container .row {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 50px;
   }
   .mission .container .row .col {
@@ -25,10 +31,13 @@
     width: 100%;
   }
   .our-team .container {
+    display: -ms-grid;
     display: grid;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .our-team .container .row {
+    display: -ms-grid;
     display: grid;
     place-items: center;
   }
@@ -36,9 +45,13 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 940px) {
   .description .container .row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .description .container .row .col {
     width: 100%;
@@ -46,4 +59,5 @@
   .description .container .row .col-description img {
     width: 100%;
   }
-}/*# sourceMappingURL=mobile.css.map */
+}
+/*# sourceMappingURL=mobile.css.map */

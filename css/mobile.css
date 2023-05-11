@@ -3,7 +3,14 @@
     padding: 0 50px;
   }
 }
+
 @media screen and (max-width: 540px) {
+  .heading {
+    font-size: 32px;
+  }
+  .hero-heading {
+    font-size: 50px;
+  }
   .container {
     padding: 20px;
     width: 100%;
@@ -12,6 +19,7 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 580px) {
   .container {
     padding: 20px;
@@ -21,13 +29,19 @@
     background-position: center;
   }
   .contacts .container .col {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contacts .container .col .row {
     width: 100%;
   }
   .contacts .container .col .row .col-1 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .contacts .container .col .row .col-1 .row-1 {
@@ -39,7 +53,10 @@
     width: 100%;
   }
   .contacts .container .location {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contacts .container .location .row {
     width: 100%;
@@ -56,4 +73,5 @@
     width: 100%;
     top: 0;
   }
-}/*# sourceMappingURL=mobile.css.map */
+}
+/*# sourceMappingURL=mobile.css.map */
