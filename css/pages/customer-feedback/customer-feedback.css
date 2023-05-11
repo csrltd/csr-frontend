@@ -1,8 +1,11 @@
 .customer-feedback .container {
   max-width: 800px;
+  display: -ms-grid;
   display: grid;
   gap: 20px;
 }
+
 .customer-feedback .container .label {
   margin-top: 20px;
-}/*# sourceMappingURL=customer-feedback.css.map */
+}
+/*# sourceMappingURL=customer-feedback.css.map */
