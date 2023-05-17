@@ -208,7 +208,6 @@ body .solution .container .col-img-solution .images-pattern .pattern {
 }
 body .solution .container .col-img-solution .images-pattern .big-img {
   position: relative;
-  width: 379.98px;
   height: 388.66px;
   left: 50px;
   top: 167px;
@@ -257,7 +256,6 @@ body .implementation .container .col-img-implement .images-pattern .pattern-reve
 }
 body .implementation .container .col-img-implement .images-pattern .big-img {
   position: relative;
-  width: 379.98px;
   height: 388.66px;
   left: -60px;
   top: 167px;
@@ -291,7 +289,6 @@ body .results .container .col-img-result .images-pattern .pattern {
 }
 body .results .container .col-img-result .images-pattern .big-img {
   position: relative;
-  width: 379.98px;
   height: 388.66px;
   left: 50px;
   top: 167px;
