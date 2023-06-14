@@ -5,6 +5,46 @@ $whitesmoke: #f6f9fe;
 $tex-color: #3d3d3d;
 $border-radius: 2px;
 
+//Popup starts here
+body {
+  position: relative;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.648);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .pop-content {
+    position: relative;
+    background-color: white;
+    padding: 24px;
+    border-radius: $border-radius;
+
+    .close-popup {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      height: 24px;
+    }
+  }
+
+  .subscribe-pop {
+    height: fit-content;
+    width: 600px;
+  }
+}
+
+//Popup ends here
+
 .hero {
   background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/hero-img2.JPG");
 

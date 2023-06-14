@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section {
@@ -11,173 +10,107 @@ section {
   width: 100vw;
   height: 100vh;
 }
-
 section .container {
   width: 100%;
   height: 100%;
 }
-
 section .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
   height: 100vh;
   width: 100vw;
 }
-
 section .container .row .col {
   height: 100%;
 }
-
 section .container .row .col-left {
   width: 50%;
   height: 100%;
   background-color: #2A2D7B;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 50px;
 }
-
 section .container .row .col-left img:first-child {
   width: 14rem;
 }
-
 section .container .row .col-left img:last-child {
   width: 30rem;
 }
-
 section .container .row .col-form {
   width: 50%;
   height: 100%;
 }
-
 section .container .row .col-form .blue-logo {
   display: none;
 }
-
 section .container .row .col-form h1 {
   color: #2A2D7B;
 }
-
 section .container .row .col-form .form-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
   padding: 10rem 5rem;
 }
-
 section .container .row .col-form .form-container form input {
   border: 1px solid black;
-  font-family: 'Futura Book', sans-serif;
+  font-family: "Futura Book", sans-serif;
 }
-
-section .container .row .col-form .form-container form input::-webkit-input-placeholder {
+section .container .row .col-form .form-container form input::-moz-placeholder {
   font-size: 16px;
 }
-
-section .container .row .col-form .form-container form input:-ms-input-placeholder {
-  font-size: 16px;
-}
-
-section .container .row .col-form .form-container form input::-ms-input-placeholder {
-  font-size: 16px;
-}
-
 section .container .row .col-form .form-container form input::placeholder {
   font-size: 16px;
 }
-
 section .container .row .col-form .form-container form input:focus {
   border: 1px solid black;
 }
-
 section .container .row .col-form .form-container form .names {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  gap: .4rem;
+  gap: 0.4rem;
 }
-
-section .container .row .col-form .form-container form input[type="submit"] {
+section .container .row .col-form .form-container form input[type=submit] {
   font-size: 18px;
   background-color: #2A2D7B;
   color: white;
-  border: 1px solid #924141;
+  border: 1px solid rgb(146, 65, 65);
 }
-
-section .container .row .col-form .form-container form input[type="submit"]:hover {
+section .container .row .col-form .form-container form input[type=submit]:hover {
   background-color: white;
   color: blue;
 }
-
 section .container #form2 input {
   width: 100%;
   border: 1px solid black;
-  font-family: 'Futura Book', sans-serif;
+  font-family: "Futura Book", sans-serif;
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid #7F868C;
   outline: none;
 }
-
-section .container #form2 input::-webkit-input-placeholder {
+section .container #form2 input::-moz-placeholder {
   font-size: 16px;
 }
-
-section .container #form2 input:-ms-input-placeholder {
-  font-size: 16px;
-}
-
-section .container #form2 input::-ms-input-placeholder {
-  font-size: 16px;
-}
-
 section .container #form2 input::placeholder {
   font-size: 16px;
 }
-
 section .container #form2 input:focus {
   outline: none;
 }
-
 section .container #form2 #documents,
 section .container #form2 #reference {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 section .container #form2 #general {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 section .container #form2 button, section .container #form2 #btnFinish {
   width: 6rem;
   padding: 10px 20px;
@@ -192,14 +125,10 @@ section .container #form2 button, section .container #form2 #btnFinish {
     width: 100%;
   }
   .application .container .row .col-form .names {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 24px;
   }
 }
-
 @media screen and (max-width: 904px) {
   .application .container .row .col-left {
     display: none;
@@ -212,21 +141,16 @@ section .container #form2 button, section .container #form2 #btnFinish {
     width: 10rem;
   }
   .application .container .row .col-form .form-container form .names {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 24px;
   }
   .application .container .row .col-form .form-container form .names input {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 540px) {
   .application .container .row .col-form {
     width: 100%;
     height: auto;
   }
-}
-/*# sourceMappingURL=application-form.css.map */
+}/*# sourceMappingURL=application-form.css.map */

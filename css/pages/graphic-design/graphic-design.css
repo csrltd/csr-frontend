@@ -5,7 +5,6 @@
 }
 
 .graphic-design-hero {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(42, 45, 124, 0.5)), to(rgba(42, 45, 124, 0.5))), url("/img/graphic-design/web img.png");
   background: linear-gradient(0deg, rgba(42, 45, 124, 0.5), rgba(42, 45, 124, 0.5)), url("/img/graphic-design/web img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,38 +13,21 @@
   color: white;
   padding-top: 45vh;
 }
-
 .graphic-design-hero .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 17px;
 }
-
 .graphic-design-hero .container .hero-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 24px;
 }
-
 .graphic-design-hero .container .hero-btn .btn-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 9px;
 }
-
 .graphic-design-hero .container .hero-btn .btn-contact a {
   color: #f6f9fe;
   font-size: 17px;
@@ -56,58 +38,39 @@
 .graphic-design-services {
   padding: 80px 0;
 }
-
 .graphic-design-services .container p {
   padding-top: 12px;
 }
-
 .graphic-design-services .container .row {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 30% 30%;
-      grid-template-columns: 30% 30% 30%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  grid-template-columns: 30% 30% 30%;
+  align-items: start;
   gap: 32px;
   padding-top: 32px;
 }
-
 .graphic-design-services .container .row .col {
   width: 100%;
   gap: 24px;
   border-radius: 2px;
-  display: -ms-grid;
   display: grid;
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
-
 .graphic-design-services .container .row .col .icon-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   border: 1px solid #cfd8ed;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 2px;
 }
-
 .graphic-design-services .container .row .col .icon-image img {
   width: 96px;
   height: 96px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .graphic-design-services .container .row .col:hover {
   margin: 0;
   padding: 24px;
@@ -121,44 +84,27 @@
   padding: 80px 0 40px 0px;
   background-color: #f6f9fe;
 }
-
 .graphic-design-process .container p {
   padding-top: 12px;
 }
-
 .graphic-design-process .container .row {
   padding: 60px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
   gap: 24px;
   row-gap: 48px;
 }
-
 .graphic-design-process .container .row .col {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 34px;
   width: 49%;
 }
-
 .graphic-design-process .container .row .col .process {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #2A2D7C;
   position: absolute;
   top: -24px;
@@ -170,25 +116,18 @@
   font-size: 28px;
   font-weight: bold;
 }
-
 .graphic-design-process .container .row .col .content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   background-color: white;
   border-radius: 2px;
   padding: 24px 34px;
 }
-
 .graphic-design-process .container .row .col:hover .content {
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
   background-color: #2A2D7C;
   color: white;
 }
-
 .graphic-design-process .container .row .col:hover .process {
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
   background-color: white;
   color: #2A2D7C;
@@ -197,22 +136,15 @@
 .graphic-design-projects {
   padding: 80px 0;
 }
-
 .graphic-design-projects .container .row {
   padding: 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 24px;
 }
-
 .graphic-design-projects .container .row .col {
-  -ms-flex-preferred-size: calc(50% - 20px);
-      flex-basis: calc(50% - 20px);
+  flex-basis: calc(50% - 20px);
 }
-
 .graphic-design-projects .container .row .col .image-project img {
   border-radius: 2px;
 }
@@ -220,18 +152,13 @@
 .call-to-action {
   padding-bottom: 80px;
 }
-
 .call-to-action .container .call-content {
   background-color: #2A2D7C;
   text-align: center;
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 24px;
   border-radius: 2px;
   color: white;
   padding: 100px 50px;
-}
-/*# sourceMappingURL=graphic-design.css.map */
+}/*# sourceMappingURL=graphic-design.css.map */

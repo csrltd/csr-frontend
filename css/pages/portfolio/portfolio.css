@@ -1,24 +1,14 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 0px;
   gap: 19.24px;
   width: 100%;
@@ -32,7 +22,7 @@ a {
 
 h6 {
   color: #2A2D7C;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -42,99 +32,62 @@ h6 {
 body .header {
   background-color: whitesmoke;
 }
-
 body .header .container .nav-header .brand .blue-logo {
   display: block;
 }
-
 body .header .container .nav-header .brand .white-logo {
   display: none;
 }
-
 body .header .container .nav-header .nav-menu .links .link .nav-link {
   color: #2A2D7C;
 }
-
 body .hero-portfolio {
   padding-top: 150px;
 }
-
 body .hero-portfolio .container .col-text-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   gap: 24px;
   width: 50%;
   height: auto;
 }
-
 body .hero-portfolio .container .col-img-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   width: 50%;
 }
-
 body .hero-portfolio .container .col-img-hero .img-hero {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
 }
-
 body .problem-statment {
   height: auto;
   background: #F6F9FE;
 }
-
 body .problem-statment .container .col-img-pb {
   width: 54, 2%;
 }
-
 body .problem-statment .container .col-img-pb .images-pattern {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
-
 body .problem-statment .container .col-img-pb .images-pattern .pattern {
   position: absolute;
   width: 323px;
   height: 507px;
 }
-
 body .problem-statment .container .col-img-pb .images-pattern .big-img {
   position: relative;
   left: 50px;
   top: 167px;
 }
-
 body .problem-statment .container .col-img-pb .images-pattern .small-img {
   position: relative;
   width: 219px;
@@ -142,87 +95,59 @@ body .problem-statment .container .col-img-pb .images-pattern .small-img {
   left: 240px;
   top: -100px;
 }
-
 body .problem-statment .container .col-text-pb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   gap: 12px;
   width: 580.09px;
   height: auto;
 }
-
 body .problem-statment .container .col-text-pb p {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 500;
   font-size: 18.6825px;
   line-height: 25px;
   color: #000000;
 }
-
 body .analysis .container .col-text-analysis {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   gap: 12px;
   width: 580.09px;
   height: auto;
 }
-
 body .analysis .container .col-text-analysis p {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 500;
   font-size: 18.6825px;
   line-height: 25px;
   color: #000000;
 }
-
 body .analysis .container .col-img-analysis {
   width: 54, 2%;
   height: auto;
 }
-
 body .analysis .container .col-img-analysis .images-pattern {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
-
 body .analysis .container .col-img-analysis .images-pattern .pattern-reverse {
   position: absolute;
   width: 323px;
   height: 507px;
 }
-
 body .analysis .container .col-img-analysis .images-pattern .big-img {
   position: relative;
   left: -60px;
   top: 167px;
 }
-
 body .analysis .container .col-img-analysis .images-pattern .small-img {
   position: relative;
   width: 219px;
@@ -230,63 +155,42 @@ body .analysis .container .col-img-analysis .images-pattern .small-img {
   left: -240px;
   top: -100px;
 }
-
 body .solution {
   height: auto;
   background: #F6F9FE;
 }
-
 body .solution .container .col-text-solution {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   gap: 12px;
   width: 580.09px;
   height: auto;
 }
-
 body .solution .container .col-text-solution p {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 500;
   font-size: 18.6825px;
   line-height: 25px;
   color: #000000;
 }
-
 body .solution .container .col-img-solution {
   width: 54, 2%;
   height: auto;
 }
-
 body .solution .container .col-img-solution .images-pattern {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
-
 body .solution .container .col-img-solution .images-pattern .pattern {
   position: absolute;
   width: 323px;
   height: 507px;
 }
-
 body .solution .container .col-img-solution .images-pattern .big-img {
   position: relative;
   width: 379.98px;
@@ -294,7 +198,6 @@ body .solution .container .col-img-solution .images-pattern .big-img {
   left: 50px;
   top: 167px;
 }
-
 body .solution .container .col-img-solution .images-pattern .small-img {
   position: relative;
   width: 219px;
@@ -302,62 +205,41 @@ body .solution .container .col-img-solution .images-pattern .small-img {
   left: 240px;
   top: -100px;
 }
-
 body .implementation {
   height: auto;
 }
-
 body .implementation .container .col-text-implement {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   gap: 12px;
   width: 580.09px;
   height: auto;
 }
-
 body .implementation .container .col-text-implement p {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 500;
   font-size: 18.6825px;
   line-height: 25px;
   color: #000000;
 }
-
 body .implementation .container .col-img-implement {
   width: 54, 2%;
   height: auto;
 }
-
 body .implementation .container .col-img-implement .images-pattern {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
-
 body .implementation .container .col-img-implement .images-pattern .pattern-reverse {
   position: absolute;
   width: 323px;
   height: 507px;
 }
-
 body .implementation .container .col-img-implement .images-pattern .big-img {
   position: relative;
   width: 379.98px;
@@ -365,7 +247,6 @@ body .implementation .container .col-img-implement .images-pattern .big-img {
   left: -60px;
   top: 167px;
 }
-
 body .implementation .container .col-img-implement .images-pattern .small-img {
   position: relative;
   width: 219px;
@@ -373,40 +254,26 @@ body .implementation .container .col-img-implement .images-pattern .small-img {
   left: -240px;
   top: -100px;
 }
-
 body .results {
   height: auto;
   background: #F6F9FE;
 }
-
 body .results .container .col-img-result {
   width: 54, 2%;
   height: auto;
 }
-
 body .results .container .col-img-result .images-pattern {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
-
 body .results .container .col-img-result .images-pattern .pattern {
   position: absolute;
   width: 323px;
   height: 507px;
 }
-
 body .results .container .col-img-result .images-pattern .big-img {
   position: relative;
   width: 379.98px;
@@ -414,7 +281,6 @@ body .results .container .col-img-result .images-pattern .big-img {
   left: 50px;
   top: 167px;
 }
-
 body .results .container .col-img-result .images-pattern .small-img {
   position: relative;
   width: 219px;
@@ -422,65 +288,48 @@ body .results .container .col-img-result .images-pattern .small-img {
   left: 240px;
   top: -100px;
 }
-
 body .results .container .col-text-result {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   gap: 12px;
   width: 580.09px;
   height: auto;
 }
-
 body .results .container .col-text-result p {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 500;
   font-size: 18.6825px;
   line-height: 25px;
   color: #000000;
 }
-
 body .project {
   padding: 100px 138px;
   height: auto;
 }
-
 body .project .container {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   background-color: #2A2D7C;
   padding: 87px 0px;
   border-radius: 4px;
 }
-
 body .project .container h1 {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   line-height: 66px;
   color: #F6F9FE;
 }
-
 body .project .container p {
-  font-family: 'Futura';
+  font-family: "Futura";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-}
-/*# sourceMappingURL=portfolio.css.map */
+}/*# sourceMappingURL=portfolio.css.map */

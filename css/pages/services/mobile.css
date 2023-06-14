@@ -6,13 +6,9 @@
     padding: 50px 0;
   }
   .service-content .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .service-content .container .col {
     width: 100%;
   }
-}
-/*# sourceMappingURL=mobile.css.map */
+}/*# sourceMappingURL=mobile.css.map */

@@ -1,5 +1,4 @@
 .header {
-  -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
   background-color: transparent;
   height: 100px;
@@ -12,145 +11,97 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-
 .header .container .nav-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 20px;
   font-family: "Futura Book", sans-serif;
 }
-
 .header .container .nav-header .brand {
   width: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
 }
-
 .header .container .nav-header .brand h1 {
   text-transform: capitalize;
   color: white;
   font-size: 20px;
 }
-
 .header .container .nav-header .brand .logo {
   width: 150px;
   pointer-events: none;
 }
-
 .header .container .nav-header .brand .blue-logo {
   display: none;
 }
-
 .header .container .nav-header .nav-menu .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
 }
-
 .header .container .nav-header .nav-menu .links .link {
   font-size: 18px;
   position: relative;
-  font-family: 'Futura Book' sans-serif !important;
+  font-family: "Futura Book" sans-serif !important;
 }
-
 .header .container .nav-header .nav-menu .links .link .dropdown {
   display: none;
   position: absolute;
   top: 100%;
   left: 50%;
   width: 250px;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 20px;
   background-color: #f6f9fe;
   z-index: 10;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 2px;
 }
-
 .header .container .nav-header .nav-menu .links .link .dropdown h3 {
   font-size: 20px;
 }
-
 .header .container .nav-header .nav-menu .links .link .dropdown a {
   color: #2A2D7C;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 12px;
 }
-
 .header .container .nav-header .nav-menu .links .link .dropdown a i {
   font-size: 22px;
   background: transparent;
   color: #2A2D7C;
 }
-
 .header .container .nav-header .nav-menu .links .link .dropdown ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 24px;
 }
-
 .header .container .nav-header .nav-menu .links .link:hover .dropdown {
   display: block;
 }
-
 .header .container .nav-header .nav-menu li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 5px;
 }
-
 .header .container .nav-header .nav-menu li a i {
   font-size: 22px;
   margin-top: 8px;
 }
-
 .header .container .nav-header .nav-toggle {
   display: none;
   color: #f6f9fe;
   font-size: 30px;
 }
-
 .header .container .nav-header .nav-fixed {
   display: none;
 }
-
 .header .container .nav-header .nav-close-btn {
   color: #f6f9fe;
   font-size: 30px;
   color: #2A2D7C;
   display: none;
-}
-/*# sourceMappingURL=nav-bar.css.map */
+}/*# sourceMappingURL=nav-bar.css.map */

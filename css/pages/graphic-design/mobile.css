@@ -3,15 +3,11 @@
     padding-top: 30vh;
   }
   .graphic-design-services .container .row {
-    -ms-grid-columns: 48% 48%;
-        grid-template-columns: 48% 48%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    grid-template-columns: 48% 48%;
+    align-items: start;
     gap: 2.5%;
   }
 }
-
 @media screen and (max-width: 540px) {
   .graphic-design-hero {
     padding-top: 30vh;
@@ -21,8 +17,7 @@
     padding-top: 40px;
   }
   .graphic-design-services .container .row {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    grid-template-columns: 100%;
   }
   .graphic-design-services .container .row .col {
     background-color: #f6f9fe;
@@ -52,11 +47,9 @@
   }
   .graphic-design-projects .container .row .col {
     width: 100%;
-    -ms-flex-preferred-size: calc(50% - 10px);
-        flex-basis: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
   }
   .graphic-design-callToAction {
     padding: 10px 0px;
   }
-}
-/*# sourceMappingURL=mobile.css.map */
+}/*# sourceMappingURL=mobile.css.map */

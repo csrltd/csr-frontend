@@ -1,3 +1,37 @@
+//Popup starts here
+const popup = document.querySelector('.popup')
+const closePopup = document.querySelector('.close-popup')
+var closedPopup = 0
+popup.style.display='none'
+const documentHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.body.clientHeight,
+    document.documentElement.clientHeight
+  );
+
+closePopup.addEventListener('click', () => {
+    popup.style.display='none'
+    closedPopup = true
+    console.log(closedPopup)
+})
+document.addEventListener('scroll', () => {
+    const scrollHeight = window.scrollY
+    if (scrollHeight > documentHeight/2 && closedPopup == false) {
+        if (popup.style.display="none") {
+            popup.style.display='flex'
+        }else {
+            popup.style.display='none'
+        }
+    }
+    
+})
+console.log("Document Height:", documentHeight);
+console.log(popup)
+//Popup ends here
+
 const Godwin = document.querySelector('.Godwin')
 const victor = document.querySelector('.victor')
 const jp = document.querySelector('.jp')
